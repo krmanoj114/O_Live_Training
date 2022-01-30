@@ -1,0 +1,31 @@
+Microservices Caching Strategy
+-------------------------------
+
+Mark R
+Source Code: https://github.com/wmr513/caching
+
+B M
+took me 10mins to find this course , Oreilly is bad at searching
+
+Mark R
+Ignite Source Code: https://github.com/wmr513/caching/tree/master/src/main/java/ignite
+
+Mark R
+Hazelcast Source Code: https://github.com/wmr513/caching/tree/master/src/main/java/hazelcast
+
+Mark R
+Data Collisions Source Code: https://github.com/wmr513/caching/tree/master/src/main/java/datacollisions
+
+V B
+Are all examples using Java?
+
+W M
+where does Redis and Memcached fit in the topologies?
+
+V B
+Great. So we are going to see pros and cons of each of these?
+
+H S
+what if one cache node fails.. its all data gets lost??
+
+V B

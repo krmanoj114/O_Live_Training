@@ -1,0 +1,405 @@
+
+Micro services architecture and design Day 2
+-------------------------------------------
+
+Andrew E
+Hello everyone, the presentation will resume in about 15 minutes.
+
+Andrew E
+Feel free to use this Group Chat in the meantime if you have any questions, or comments
+
+Mark R
+Welcome to day 2 of the class everyone!
+
+J J
+hello from Dublin
+
+P O
+Hi Mark!!
+
+P J
+Hi Mark !
+
+G M
+hello Mark from Uruguay
+
+B D
+Lets say a service takes input from kafka and produce to kafka
+
+B D
+how to segregate threadpools
+
+M C
+👍
+
+S Y
+when code is repeated, how can we ensure bug fixed or enhancements applied at all places?
+
+S V
+are you presenting slides or something?
+
+Andrew E
+Yes, slides should be visible within the Slides window.
+
+Andrew E
+You can cue that window from the widget tray towards the bottom of your screen.
+
+S V
+got it
+
+Andrew E
+Refreshing your browser window will also usually help content to stream
+
+Mark R
+Authz
+
+Mark R
+Shared Library or Shared Service?
+
+B D
+Cross Cutting Concern
+
+C R
+Shared Service
+
+L B
+Shared Service because it needs more resources to do that not only a simple library that does simple operations
+
+R E
+shared library
+
+P O
+Service
+
+A R
+Authorize or Authentication? :)
+
+R G
+Service
+
+M S
+Both :)
+
+G M
+service if we do not care about performance
+
+R B
+service as it can be separately scaled
+
+R B
+and decoupled
+
+R B
+deployment will be a challenge if any changes happen
+
+D B
+the services could all rely on different code versions of the shared library, right?
+
+D B
+so, there is no breaking change.
+
+D A
+I was under the impression that the bounded context comes from functional decomposition (i.e. a product service). If the shared library is around security, logging, etc., Would you consider security to be part of the bounded context of a product service?
+
+D B
+this forms an important question. which team manages the shared library? the domain teams or the auth team?
+
+R E
+If the shared service goes down, doesn't that bring down all the services that use it?
+
+D B
+We have observed Inter team dependencies affect agility - trade off of distributed teams i guess.
+
+D B
+How does a shared service keep track of all its callers? Through logs?
+
+V P
+@DB I think this can be manage by each service should pass their unique service name to API and that can be monitor through the graph.
+
+Mark R
+Authz - Shared Lib or Shared Service?
+
+D B
+@VP, may not be a great idea to pass the service name as part of the API contract? may be you mean as headers?
+
+B D
+Cross Cutting Concern
+
+B D
+:)
+
+V P
+Yes, @DB in headers.
+
+D B
+Mark, in all the companies i worked with, there is always a 'platform' team. Do you see these teams dissipating into domain teams? What responsibilities do they have in the microservice world?
+
+A R
+^ Good question. Our org has hard separation between ops and code also.
+
+B D
+Pass the auth token, servicId to each service
+
+B D
+depends
+
+G M
+it depends
+
+Y E
+I couldnt understand the difference btw replicate code and consolidate services
+
+S Y
+I have experience with multiple bugs missed to be fixed in prod due to replicated code, so I like it least :-)
+
+Y E
+so consolidate services are still shared service but in a smaller scale
+
+M S
+will consolidated service lead to a monolith service ?
+
+Mark R
+@MS - well, yes, it would create a more coarse-grained service - trade-offs... larger service, fewer dependencies
+
+Mark R
+@YE - Consolidated service is only a bigger service - more functionality (like what we saw yesterday with the granularity discussion)
+
+A K
+is audio gone for me only?
+
+A R
+Audio working fine here.
+
+Mark R
+@AK refresh browser
+
+Andrew E
+Audio is streaming for us listening remotely.
+
+Y E
+I can hear
+
+P O
+good here
+
+S Y
+I can hear
+
+G M
+ok for me
+
+Andrew E
+It's not uncommon you might see some buffering the longer a session is live.
+
+A K
+ok thanks refreshed
+
+Andrew E
+It's usually advisable to refresh your browser whenever a break is called
+
+D B
+How do banks break/shard data by users for example when money needs to be transferred. Distributed transactions? saga patterns might be inefficient here too?
+
+D B
+In this case, the users transfering money b/w each other belong to separate shards.
+
+N K
+With a shared database, what about master/slave paradigm? Slaves for reads, master for writes.
+
+N K
+what "about" that is
+
+S Y
+can view be created on tables from multiple databases ?
+
+A K
+can view be used in aggregator service?
+
+D B
+The football view is pretty cool!
+
+V P
++1
+
+D B
+Entities such as user profile though is cross cutting all the hexagons. How do we deal with this kind of common data ?
+
+I C
+would you access data from a data domain through a data service, or would each service access the database directly?
+
+D B
+make a copy.
+
+Mark R
+Proxy service
+
+D B
+denormalize data across domains.
+
+A R
+Isn't the proxy just a data service? Do you need to differentiate the two?
+
+R B
+do we still need a proxy if an existing service can be already there to retrieve that data?
+
+D B
+does it mean that data access services can not be accessed from another domain? Is it layered in that sense?
+
+D B
+that answers my question. thanks
+
+Y E
+where does proxy live?
+
+D B
+Proxy that way is simply a REST API on a resource. Representational state of the the db?
+
+D B
+The boundedcontext.java is a shared library across microservs?
+
+Mark R
+./bc.sh PAYMENT
+
+Mark R
+CreditcardService, GiftCardService
+
+A R
+Quick gray hat RCE check...
+
+Mark R
+annotations.jar
+
+D A
+Isn't REST still a messaging call?
+
+Mark R
+gRPC-LB
+
+Mark R
+gRPC and Microservices https://www.developertoarchitect.com/lessons/lesson60.html
+
+Mark R
+https://www.developertoarchitect.com/lessons/
+
+B D
+Are you suggesting whenever intra-service communication is needed use gRPC
+
+B D
+Sorry, inter-service
+
+Mark R
+Stamp coupling https://www.developertoarchitect.com/lessons/lesson105.html
+
+A K
+auditService
+
+Y E
+what was different in product table than audit?
+
+S V
+We have a scenario where we are getting multiple local applications data into a global repository. This means each local system data integration will have a service but they are writing to the same repository.. How do you suggest handle this
+
+Mark R
+@YE - Product table is only written to by a FEW services (joint ownership), whereas audit is written to by ALL services (common)
+
+Mark R
+@YE - however, delegation is a similar technique, but we are in this case not creating a new service
+
+S V
+more specifically, how do we handle data ownership
+
+S V
+also, we have several requests to read from this data source as well for visibility, analytics and reports
+
+B D
+Your Org can become Mark's client
+
+Mark R
+@SV - we'll look at the data access after the break...
+
+S V
+thank you Mark and BD for your suggestion :)
+
+A K
+can be useful if eventual consistency is fine.
+
+C R
+Having a view?
+
+A R
+Where does bounded context come into play with replicated cache?
+
+D B
+So, the wishlist service is now dependent on the cache objects. key-value pairs whose format can change?
+
+S V
+it is still two calls and not just single DB call
+
+A R
+SV: data is in-memory, call is basically instantaneous
+
+S V
+so, still involved in some latency..may not be network related latency
+
+A K
+separate caching service?
+
+D B
+wishlist service calls the catalog api and stores the results in IMDG. Does that sound correct?
+
+D A
+Is your main reason for not wanting to break the bounded context because you don't reduce coupling (i.e. other services should not be reliant on implementation details outside of the service contract)?
+
+D A
+because you want to reduce coupling*
+
+Mark R
+Hazelcast, Ignite, Coherence, Gemfire, Infinispan
+
+Mark R
+Better? Best?
+
+Mark R
+It depends!
+
+A R
+I can see how some of these could be combined with service types. E.g. Data Domains + Data Service.
+
+D B
+Fantastic summary on data access Marc.
+
+Y E
+why payment ser. is not sync. in choreography?
+
+A R
+Depends - what if we need to update Order after each step?
+
+S V
+orchestration - it can handle errors
+
+N K
+What if placement is unavailable, the request can be sent again by the orchestration
+
+S V
+or we can say : business logic rather than error handling?
+
+S J
+it depends!
+
+Mark R
+Fundamentals of Software Architecture (online): https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/
+
+Mark R
+undamentals of Software Architecture (amazon): https://www.amazon.com/Fundamentals-Software-Architecture-Comprehensive-Characteristics/dp/1492043451/
+
+Mark R
+INDIA Fundamentals of Software Architecture (amazon): https://www.amazon.in/Fundamentals-Software-Architecture-Engineering-Approach-ebook/dp/B0849MPK73/
+
+p k
+Could you suggest any open source projects that were built with all these principles or something less utopian?
+
+S Y
+can you please explain choreography vs orchestration, little confused?
+
+A R
+Do you have any resources for documenting an application as you determine its domains, characteristics, etc.?

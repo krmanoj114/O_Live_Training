@@ -1,0 +1,742 @@
+Spring and Spring boot in three weeks by Ken Kausen
+-------------------------------------
+05/13/2021
+
+https://pragprog.com/titles/kkmanage/help-your-boss-help-you/
+
+Pack2021
+
+
+https://blogs.itemis.com/en/4-microservice-frameworks-in-comparsion-example-included
+
+
+
+https://github.com/kousen/spring-and-spring-boot
+
+
+http://www.kousenit.com/springboot/
+
+https://www.one-tab.com/page/xnEqfajATd-uO5JcJrdFjg
+
+https://blogs.itemis.com/en/4-microservice-frameworks-in-comparsion-example-included
+
+
+
+https://github.com/kousen/spring-and-spring-boot
+
+======================================================
+Link from group chat
+--------------------
+Derek H 5/13/2021 5:15 PM
+Hello everyone, welcome to day one of Spring and Spring Boot in 3 Weeks taught by Ken Kousen.
+
+Derek H 5/13/2021 5:15 PM
+This course is being recorded. It will be ready to view 24-48 hours after class ends, and you will have access to it as long as your O’Reilly Learning account is active.
+
+Derek H 5/13/2021 5:15 PM
+Once available, you will receive an email with access details. You can also view the recordings on the course landing page: https://learning.oreilly.com/attend/spring-and-spring-boot-in-3-weeks/0636920055088/0636920055087/
+
+Derek H 5/13/2021 5:15 PM
+This is a group chat – please be mindful of any information you decide to share while using it.
+
+Derek H 5/13/2021 5:15 PM
+We are not responsible for any links to third-party websites or resources, or for your contacts and interactions with third-parties that take place outside of our website or services.
+
+P G 5/13/2021 5:31 PM
+Hello From India!!
+
+A S 5/13/2021 5:31 PM
+Hello From India!!
+
+S R 5/13/2021 5:31 PM
+Hello from Chennai!
+
+T S 5/13/2021 5:31 PM
+Hello from Monheim, Germany
+
+U 1 5/13/2021 5:31 PM
+Hello From India!!
+
+R S 5/13/2021 5:32 PM
+Hello from Chicago
+
+M L 5/13/2021 5:32 PM
+Good afternoon from Germany
+
+C J 5/13/2021 5:32 PM
+Good morning from Silicon Valley
+
+Derek H 5/13/2021 5:32 PM
+Class has started and you should now be hearing Ken. If you have any audio/connection issues during today’s course, try refreshing your browser.
+
+C G 5/13/2021 5:32 PM
+Good evening from India
+
+Z K 5/13/2021 5:32 PM
+Hello from Hungary!
+
+R D 5/13/2021 5:32 PM
+hello from Bangalore India
+
+A M 5/13/2021 5:32 PM
+Hello from Mexico
+
+J U 5/13/2021 5:32 PM
+Hello from Poland
+
+J O 5/13/2021 5:32 PM
+hello from Mexico
+
+N G 5/13/2021 5:32 PM
+From Australia Melbourne too
+
+S M 5/13/2021 5:33 PM
+Hello From Zurich, Switzerland
+
+S K 5/13/2021 5:33 PM
+Hello from India
+
+V A 5/13/2021 5:33 PM
+Chennai
+
+P J 5/13/2021 5:33 PM
+Hello from Oregon
+
+N G 5/13/2021 5:33 PM
+Greetings from Greece
+
+S P 5/13/2021 5:33 PM
+Hello from Greece
+
+S S 5/13/2021 5:33 PM
+From India
+
+S M 5/13/2021 5:33 PM
+Greetings from Sydney
+
+J N 5/13/2021 5:33 PM
+Hello from Stockholm, Swedan
+
+A T 5/13/2021 5:33 PM
+Hi from Hyderabad, India
+
+C J 5/13/2021 5:33 PM
+I like this 3 hour format. 4 hours is too long to digest…. Especially at 5 am PST, LOL
+
+R R 5/13/2021 5:33 PM
+From Mumbai India
+
+Y H 5/13/2021 5:33 PM
+Hello from Israel
+
+L V 5/13/2021 5:33 PM
+Hello from South Africa...
+
+S P 5/13/2021 5:33 PM
+Hi Ken from Colombia!!
+
+B A 5/13/2021 5:33 PM
+From India
+
+J L 5/13/2021 5:33 PM
+London! :)
+
+K K 5/13/2021 5:33 PM
+From kolkata india
+
+M J 5/13/2021 5:33 PM
+hi from Kerala , India
+
+B K 5/13/2021 5:33 PM
+Hello from Poland
+
+I K 5/13/2021 5:33 PM
+Hi, Ken! Igor Karpov from NYC. Love your courses and your blog! And your singing with your wife!
+
+D M 5/13/2021 5:33 PM
+South Africa
+
+S G 5/13/2021 5:33 PM
+Hello from Ireland
+
+V J 5/13/2021 5:34 PM
+Hello from Singapore
+
+T N 5/13/2021 5:34 PM
+Howdy from Austin, TX
+
+D S 5/13/2021 5:34 PM
+From India
+
+C J 5/13/2021 5:34 PM
+What singing? URL please LOL
+
+P G 5/13/2021 5:34 PM
+Hi From Pune,India !!
+
+K G 5/13/2021 5:34 PM
+Hello from Nepal
+
+I K 5/13/2021 5:35 PM
+https://www.youtube.com/watch?v=SokqI2-laQg
+
+V A 5/13/2021 5:35 PM
+Hello from Bay area
+
+I K 5/13/2021 5:35 PM
+CJ, link's up there
+
+M K 5/13/2021 5:35 PM
+Hello from India
+
+I K 5/13/2021 5:35 PM
+there are many more
+
+K N 5/13/2021 5:35 PM
+Hello from Sri Lanka
+
+K T 5/13/2021 5:36 PM
+Good morning from Canada
+
+S R 5/13/2021 5:36 PM
+Good Morning from Dallas, TX
+
+R V 5/13/2021 5:36 PM
+Hello from Kerala India
+
+I K 5/13/2021 5:36 PM
+Just don't call it Ceylon
+
+I K 5/13/2021 5:36 PM
+:)
+
+J W 5/13/2021 5:38 PM
+are those links in Resource List shared at somewhere?
+
+T N 5/13/2021 5:39 PM
+Taprobane, Serendip... so many names.
+
+S M 5/13/2021 5:40 PM
+Chellanges are on the resource list
+
+I K 5/13/2021 5:42 PM
+I have created a web page with these links: https://www.one-tab.com/page/xnEqfajATd-uO5JcJrdFjg
+
+I K 5/13/2021 5:42 PM
+i can add links to it as needed
+
+I K 5/13/2021 5:43 PM
+:)
+
+S B 5/13/2021 5:43 PM
+can anyone attend the second session without attending this live after watching recording session
+
+Derek H 5/13/2021 5:45 PM
+SS, they would have to have registered for the entire course
+
+I K 5/13/2021 5:46 PM
+your jokes don't go stale
+
+B S 5/13/2021 5:46 PM
+bring them on lol
+
+Kenneth K 5/13/2021 5:46 PM
+https://pragprog.com/titles/kkmanage/help-your-boss-help-you/
+
+I K 5/13/2021 5:46 PM
+you put variations on the themes
+
+Kenneth K 5/13/2021 5:46 PM
+Pack2021
+
+I K 5/13/2021 5:47 PM
+Next: Help your boss help you help him.
+
+A S 5/13/2021 5:47 PM
+Can this be Shipped to India ?
+
+A S 5/13/2021 5:48 PM
+Cool waiting for the print book
+
+V A 5/13/2021 5:48 PM
+Is the book available on Oreilly?
+
+A S 5/13/2021 5:49 PM
+Which management course do you teach on Oreilly?
+
+Kenneth K 5/13/2021 5:49 PM
+Managing Your Manager
+
+A S 5/13/2021 5:49 PM
+thanks
+
+C J 5/13/2021 5:50 PM
+https://learning.oreilly.com/attend/managing-your-manager/0636920162872/0636920057304/
+
+K W 5/13/2021 5:50 PM
+Thanks
+
+B S 5/13/2021 5:51 PM
+Love or hate, we meet spring, so I guess we need to know how it works.
+
+I K 5/13/2021 5:51 PM
+do you have an opinion on other microservices frameworks vs spring? e.g. https://blogs.itemis.com/en/4-microservice-frameworks-in-comparsion-example-included
+
+I K 5/13/2021 5:52 PM
+thanks!
+
+I K 5/13/2021 5:52 PM
+of course, but i have never seen anyone use other frameworks, if they already use spring
+
+C K 5/13/2021 5:53 PM
+New to J ava world ,any reference how can I get more knowledge on beans, ?
+
+K W 5/13/2021 5:54 PM
+Seems the slides are not refreshing for me?
+
+I K 5/13/2021 5:54 PM
+they do refresh
+
+I K 5/13/2021 5:55 PM
+for me
+
+Derek H 5/13/2021 5:55 PM
+KW, Ken is sharing the slides in the media player
+
+Kenneth K 5/13/2021 5:55 PM
+https://github.com/kousen/spring-and-spring-boot
+
+Derek H 5/13/2021 5:55 PM
+You may need to refresh your browser if you aren't seeing them
+
+Kenneth K 5/13/2021 5:56 PM
+http://www.kousenit.com/springboot/
+
+A S 5/13/2021 5:59 PM
+it's 3 hours
+
+S S 5/13/2021 5:59 PM
+it's 3 hours for all of the sessions
+
+A P 5/13/2021 5:59 PM
+Its 3 hours for all the 3 sessioons
+
+Derek H 5/13/2021 5:59 PM
+I'm seeing three hours as well Ken
+
+R G 5/13/2021 5:59 PM
+yes, it's 3 hours
+
+J L 5/13/2021 5:59 PM
+Yes, was expecting 3 hours.
+
+S S 5/13/2021 6:00 PM
+feel free to extend it
+
+R S 5/13/2021 6:00 PM
+Please extend it
+
+A S 5/13/2021 6:00 PM
+eel free to extend it
+
+U 1 5/13/2021 6:00 PM
+please extend it
+
+M G 5/13/2021 6:00 PM
+tbh I thought it's 4h, so my math is off as well :D
+
+I K 5/13/2021 6:00 PM
+can we do all 12 hours now?
+
+A S 5/13/2021 6:00 PM
+LOL
+
+Z K 5/13/2021 6:00 PM
+:)
+
+M G 5/13/2021 6:01 PM
+great idea :D
+
+I K 5/13/2021 6:04 PM
+Added github and exercises links: https://blogs.itemis.com/en/4-microservice-frameworks-in-comparsion-example-included
+
+I K 5/13/2021 6:04 PM
+sorry, wrong link
+
+I K 5/13/2021 6:05 PM
+https://www.one-tab.com/page/Dm1ySMp5Ryi_jcr6CpsxHg
+
+Kenneth K 5/13/2021 6:07 PM
+https://start.spring.io/
+
+C G 5/13/2021 6:10 PM
+if we add dependancy on classpath then spring automatically creates bean for all deps calsses?
+
+R S 5/13/2021 6:11 PM
+Can we change the embedded server - use jetty instead of tomcat?
+
+A B 5/13/2021 6:12 PM
+what if I use WAR instead of JAR?
+
+S S 5/13/2021 6:13 PM
+haha
+
+C J 5/13/2021 6:13 PM
+Say it again!
+
+C J 5/13/2021 6:13 PM
+lol
+
+N V 5/13/2021 6:14 PM
+is it limited to only tomcat webserver?
+
+a a 5/13/2021 6:15 PM
+what advantage we have when we deployed in Tomcat server vs the embedded one?
+
+A T 5/13/2021 6:15 PM
+cannot see the slides
+
+Derek H 5/13/2021 6:16 PM
+Refresh your browser if you do not see Ken's screen share in the media player
+
+Kenneth K 5/13/2021 6:16 PM
+Spring Assistant
+
+G L 5/13/2021 6:17 PM
+I've been stuck before in running apps due to a maven error during compile which I have not been able to resolve. Is this common?
+
+V R 5/13/2021 6:18 PM
+Is the spring parent always needed ? Can i skip it and still make the code work ?
+
+I K 5/13/2021 6:20 PM
+i have never worked on a project using gradle - maven everywhere so far, but i understand gradle is a lot more advanced for serious production builds - is that the reason you prefer it?
+
+P J 5/13/2021 6:20 PM
+what does 1.0.11.Realese actually mean?
+
+P J 5/13/2021 6:21 PM
+Oh okay, t hank you!!
+
+R D 5/13/2021 6:23 PM
+can i still use myeclipse ide for this exercise?
+
+S P 5/13/2021 6:24 PM
+Yeah You can down load Spring Tool Suite
+
+S P 5/13/2021 6:24 PM
+It is based on Eclipse and I have used that it's quite good I must say
+
+V T 5/13/2021 6:25 PM
+what shortcut you are using to bring-up the documentation?
+
+L H 5/13/2021 6:26 PM
+@v t, good question. Ken, could you share that shortcut, please.
+
+a a 5/13/2021 6:26 PM
+How can we configure for https and HTTP
+
+a a 5/13/2021 6:26 PM
+?
+
+C G 5/13/2021 6:26 PM
+@PathVariable is equivalent with @RequestParam
+
+S S 5/13/2021 6:27 PM
+ctrl Q on windows
+
+a a 5/13/2021 6:27 PM
+I mean using the encription keys
+
+R S 5/13/2021 6:27 PM
+What is Model used for?
+
+L H 5/13/2021 6:27 PM
+@S S, thanks
+
+L H 5/13/2021 6:28 PM
+Could you compare model use versus 'fast attributes' versus session variables?
+
+L H 5/13/2021 6:30 PM
+Not the question. I was asking for a comparison
+
+L H 5/13/2021 6:30 PM
+That helps. Thanks.
+
+R S 5/13/2021 6:31 PM
+Ken, will you be uploading this code snippet with comments to the github?
+
+A P 5/13/2021 6:31 PM
+What if the page location/name is different
+
+K W 5/13/2021 6:31 PM
+Does the view has to be HTML?
+
+R S 5/13/2021 6:32 PM
+I understand - need to take notes now :-)
+
+I K 5/13/2021 6:32 PM
+https://github.com/iggykarpov/spring-and-spring-boot/blob/master/demo/src/main/resources/templates/hello.html
+
+I K 5/13/2021 6:32 PM
+:)
+
+L H 5/13/2021 6:34 PM
+FWIW, I used the wrong term, it should have been 'Flash Attribute' (https://www.baeldung.com/spring-web-flash-attributes). Was curious about how often those are used in industry or actual practice. Thanks.
+
+P J 5/13/2021 6:35 PM
+How long it takes to release the port 8080 after the application is stopped?
+
+Derek H 5/13/2021 6:35 PM
+Break time - class will resume shortly.
+
+I K 5/13/2021 6:35 PM
+https://www.baeldung.com/spring-web-flash-attributes
+
+Derek H 5/13/2021 6:45 PM
+Break has concluded. Class will now continue.
+
+A S 5/13/2021 6:46 PM
+Sharing screen ?
+
+P V 5/13/2021 6:46 PM
+You have not shared your screen I think.
+
+P J 5/13/2021 6:46 PM
+Please share screen
+
+S S 5/13/2021 6:46 PM
+you;re not sharing your screen
+
+N B 5/13/2021 6:46 PM
+cant see our screen
+
+N K 5/13/2021 6:46 PM
+Can you please share the screen
+
+T F 5/13/2021 6:46 PM
+Can yo u share your screen
+
+V T 5/13/2021 6:46 PM
+we see you ken not your screen
+
+P J 5/13/2021 6:47 PM
+No problem
+
+J A 5/13/2021 6:47 PM
+thanks
+
+B S 5/13/2021 6:48 PM
+modules?
+
+A J 5/13/2021 6:48 PM
+is that option available in gradle window?
+
+A J 5/13/2021 6:49 PM
+thanks
+
+R S 5/13/2021 6:55 PM
+please post git hub link
+
+Kenneth K 5/13/2021 6:55 PM
+https://github.com/kousen/spring-and-spring-boot
+
+R S 5/13/2021 6:55 PM
+Thanks
+
+S H 5/13/2021 7:02 PM
+so autowired instances are unique to all classes?
+
+A S 5/13/2021 7:04 PM
+then - we use qua lifier annotation ?
+
+R S 5/13/2021 7:07 PM
+Thanks!
+
+Kenneth K 5/13/2021 7:08 PM
+Nyan Progress Bar
+
+P J 5/13/2021 7:09 PM
+I liked it - thank you!
+
+S S 5/13/2021 7:09 PM
+I use it too!
+
+S S 5/13/2021 7:11 PM
+could you please explai n the package conventions, like why use entities or services etc
+
+S S 5/13/2021 7:13 PM
+thank you very much!
+
+R S 5/13/2021 7:13 PM
+how do we make this Greeting bean into Spring Bean? In other words what's the difference?
+
+R S 5/13/2021 7:14 PM
+Thanks!
+
+K R 5/13/2021 7:15 PM
+How will the control come from main class to the Greetings Controller
+
+K R 5/13/2021 7:17 PM
+Thanks for the explanation, it helps!
+
+P J 5/13/2021 7:19 PM
+When it is serialized to JSON do need to de-serialize it?
+
+Y G 5/13/2021 7:20 PM
+If return a list of object, how to handle by response?
+
+A S 5/13/2021 7:20 PM
+why do we need default status code?
+
+a T 5/13/2021 7:20 PM
+how can we handle multiple Response Status based on conditions or error
+
+A S 5/13/2021 7:22 PM
+try http :8080/hello on terminal - what do we get?
+
+P V 5/13/2021 7:24 PM
+which is the utility which gived this formatted response in the command line
+
+S S 5/13/2021 7:25 PM
+https://httpie.io/
+
+R S 5/13/2021 7:25 PM
+is the response body text sent as readable text string on the wire?
+
+R S 5/13/2021 7:26 PM
+how can we encode that so that it's not readable?
+
+R S 5/13/2021 7:27 PM
+ok
+
+R S 5/13/2021 7:27 PM
+thanks
+
+A S 5/13/2021 7:28 PM
+We obviously dont use random ports on main service, right ? :)
+
+C G 5/13/2021 7:31 PM
+then how to write unit tests for RestController without starting server? or this is a way to write unit tests
+
+C G 5/13/2021 7:31 PM
+thanks
+
+R S 5/13/2021 7:31 PM
+MockMvc
+
+P G 5/13/2021 7:35 PM
+seems its Logging Aspect, you are using the Aspect concept of spring to intercept logging
+
+Derek H 5/13/2021 7:36 PM
+Break time - class will resume shortly.
+
+P V 5/13/2021 7:36 PM
+is there any difference in Starting the Application using gradlew bootRun vs Running it from Executing the Class which is annotated with @SpringBootApplication
+
+Kenneth K 5/13/2021 7:37 PM
+Both of those approaches do the same thing, as you said, but the bootRun is from the Gradle plugin
+
+Kenneth K 5/13/2021 7:37 PM
+That's easier to run from outside the IDE, for example
+
+P V 5/13/2021 7:39 PM
+ok - thank you
+
+Derek H 5/13/2021 7:45 PM
+Break has concluded. Class will now continue.
+
+M M 5/13/2021 7:46 PM
+ok thanks
+
+Kenneth K 5/13/2021 7:46 PM
+https://spring.io/
+
+V J 5/13/2021 7:53 PM
+@Derek: Is there way to playback the recorded video at different speed ?
+
+Derek H 5/13/2021 7:56 PM
+No, but you can skip around if needed.
+
+s n 5/13/2021 7:56 PM
+how do you get to the documentation. There's a lot of stuff on spring.io
+
+A J 5/13/2021 7:57 PM
+aspect can be used for auditing purposes
+
+s n 5/13/2021 7:57 PM
+thanks
+
+P G 5/13/2021 7:57 PM
+yes
+
+T F 5/13/2021 7:58 PM
+This is java not AspectJ?
+
+L H 5/13/2021 8:00 PM
+@V J, in another live training, another attendee recommended 'video playback controller' plugin for Chrome. (I haven't tried it yet, so your call whether to try it out.)
+
+P V 5/13/2021 8:02 PM
+by default this hooks are on the public methods of the class
+
+I K 5/13/2021 8:04 PM
+https://www.tutorialspoint.com/difference-between-spring-aop-and-aspectj-aop - could you address spring aop vs aspectj ?
+
+S H 5/13/2021 8:06 PM
+but we have stopped using this type of config?
+
+S H 5/13/2021 8:06 PM
+XML and java config was replaced by annotations?
+
+A P 5/13/2021 8:07 PM
+is it like constants file ?
+
+A S 5/13/2021 8:11 PM
+Can we instantiate beans by passing dynamic parameters?
+
+S H 5/13/2021 8:13 PM
+is build.gradle similar to pom.xml for maven? while opening projects?
+
+V R 5/13/2021 8:14 PM
+can someone ping the git url of the samples.. if u dont mind
+
+S S 5/13/2021 8:14 PM
+https://github.com/kousen/spring-and-spring-boot
+
+V R 5/13/2021 8:14 PM
+thanks
+
+S B 5/13/2021 8:16 PM
+Can @Resource be used instead of @Autowired?
+
+S H 5/13/2021 8:19 PM
+what is the difference between spring and reactive spring?
+
+S H 5/13/2021 8:19 PM
+what exactly is Mono?
+
+D K 5/13/2021 8:20 PM
+Can we use smallRye Mutiny?
+
+P V 5/13/2021 8:22 PM
+Any Spring Managed Class - Construtor with Arguments - without decorating with @AutoWired on the Constructor - will it pull the Spring Bean which is Constructor Argument?
+
+S J 5/13/2021 8:22 PM
+what if we don't give a time to wait inside block()?
+
+S H 5/13/2021 8:23 PM
+but then we have to compulsorily block a mono? then how is it async?
+
+S H 5/13/2021 8:24 PM
+I think block() can be without parameters
+
+R S 5/13/2021 8:30 PM
+Thanks, Ken for an interesting session!
+
+S S 5/13/2021 8:31 PM
+T hank you very much Ken!
+
+Derek H 5/13/2021 8:31 PM
+Thank you for attending day one of Spring and Spring Boot in 3 Weeks. We hope that you have enjoyed the training. We look forward to seeing you next week for Day 2!
+
+L H 5/13/2021 8:31 PM
+Thanks, Ken. As always learned something new that I plan to use.

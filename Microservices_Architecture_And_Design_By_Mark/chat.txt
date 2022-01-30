@@ -1,0 +1,501 @@
+Microservices architecture and design by Mark
+================================================
+
+Timestamp 
+Andrew E
+Hello everyone, the presentation will begin in about 15 minutes.
+
+Andrew E
+Feel free to use this Group Chat in the meantime if you have any questions, or comments
+
+P O
+Greetings from Galway, West coast of Ireland.
+
+Mark R
+Welcome to the class everyone! We'll get started in about 5 minutes
+
+Mark R
+Hi from Boston, US
+
+Andrew E
+We are live now, and you should be hearing Mark
+
+M S
+Can we have microservices in a system with a single database. ie. without decomposing data ?
+
+P G
+Can you please talk about the best practices for building microservices ?
+
+Mark R
+5,600 tests
+
+Mark R
+120 fail!
+
+J R
+Since there are many parts to fail in micro-service architecture, wouldn't have affect 'availability'
+
+S J
+do those reasons work for SOA too?
+
+D B
+Hey Mark! Do we still have use for Enterprise Service Buses or are we just looking at building smart services and dumb pipes?
+
+Mark R
+Microservices vs. SOA: https://learning.oreilly.com/library/view/microservices-vs-service-oriented/9781491975657/
+
+A M
+Why microservices, not micro-modules/micro-monolith
+
+D B
+Thanks Mark. Looking forward to the API gateway topic and request orchestration.
+
+J R
+People use API layer to compose multiple micro-services right? It means it's aware of the micro-services and is not a good thing isn't it?
+
+G K
+Is there any difference between microservice and service oriented architecture
+
+N P
+So does that mean that data content for 2 services don't have any connection between them.
+
+R G
+Each service utilizes a shared database or is it an independent identity for a service?
+
+D V
+API Layer in Micro Services is equivalent to Service Bus in SOA?
+
+M A
+what's happens when for a workflow there is a chain of hierarchy of service dependency, do we have water fall in service hierarchy
+
+S S
+please print questions in Group chat so we see them too.
+
+S V
+services talk to each other could be events, streaming
+
+M A
+spaghetti code -> spaghetti communication :)
+
+I B
+If any of the service goes down than in that case api layer have to start a new instance from the clone of the down service component ? Is this a correct way ?
+
+J R
+How do we define the borders for bounded context? Are there any tips which you could suggest?
+
+D A
+If the 'wish list' service is contains product names and descriptions and another microservice 'products' also has the same product names and descriptions, how do you keep that data in sync?
+
+I D
+How do we avoid "nano" services? Where to do any meaningful work in the system we have to create very chatty systems with lots of dependencies
+
+M A
+single data of truth, they need to be refactored
+
+G M
+what is the difference among evolvability and maintainability?
+
+I B
+if one table is meant to be common for all services for example user-details data is used by all services than how we will sync up data ??
+
+D B
+Is the 'Akka' framework i.e.. An actor based model a valid alternative to microservices?
+
+Y E
+why a service would need another services data?
+
+G M
+how it is rate on data consistency? it looks that we could have a lot of eventual consistency
+
+S V
+that brings up interesting point : is containerization = micro services?
+
+A R
+SV: I'd expect containerization to fall under "Design"
+
+M A
+containerization increases the speed of deployments
+
+Mark R
+containerization = portability
+
+D V
+For Complex workflows -- event driven architecture is better option than Micro Services?
+
+D V
+Can you please explain this more
+
+M A
+even lamda functions is a deployment strategy not an architecture
+
+J R
+Let's say the ESB in a SOA architecture becomes a dumb layer where it doesn't have any business logic. So now it just talks to different services (SOAP/REST) nothing more. can we call it a micro service?
+
+Mark R
+@DV. yes, and we could also use event-driven microservices as well (very common hybrid architecture)
+
+Mark R
+@MA - correct - I'm going to talk about serverless after the second break
+
+Mark R
+@JR - just because the ESB only does cross cutting does not make it microservices - we still need the bounded context (services owning their own data) and single-purpose services
+
+S J
+does each microservice = API? or does microservice architecture = API Architecture?
+
+S S
+Where is the microservices Gateway in this ?
+
+S S
+thanks
+
+N P
+Does the aPI layer corresponds to the Gateway?
+
+D A
+Mark, did you say the product service and the profile service are the ports and we access those ports through the adapter?
+
+D B
+are adaptors deployed separately or is it just another modules/class in the microservice code?
+
+B G
+What do these implementation classes contain?
+
+D A
+So adapters can be incoming or outgoing?
+
+S J
+profile is a adapter between microservices ?
+
+D A
+Are these also referred to as mediation services (i.e. basically transform messages between different bounded contexts and support different protocols)?
+
+G M
+can you explain how these adapters work together at runtime? ej how to handle an RPC call and an Asyn call?
+
+V S
+is Micro-hexagon design supposed to have only 6 adaptors? or can it have as many as needed?
+
+V S
+Thanks Mark!
+
+A R
+2 for 2 Mark courses now I've heard that joke :D
+
+J R
+The client that used by Wishlist service to talk to ProfileService can be used by other services also right? So can that be made as a reusable service/library and used like a sidecar?
+
+S J
+could please define profile again?
+
+N P
+SO does this mean that to get data from any service level API / service, I need to have an adapter in between using my service end points?
+
+D B
+so n micro services = n protocol/profile/product adaptors?
+
+S A
+So Wishlist becomes dependent on Profile and Produt Service and if it goes down wishlist gets impacted ?
+
+Y E
+when you say adapter services is it the same adapter class?
+
+D B
+so, adaptors need not be micro services themselves? since you mentioned it could be sidecars?
+
+Mark R
+cohesion
+
+N B
+different service
+
+D A
+if they use the same data, I'd keep them together
+
+R B
+if the underlying systems to perform sms, email and letter are different, then it should be separate
+
+D B
+arent sms, letter and email a protocol to communicate a notification. then we are essentially talking about one service.
+
+D A
+Righting Software - Juval Lowy has a book about this
+
+V S
+only concern if you know code volatility in advance.
+
+I D
+does that scalability question matter? If the cpu load for postal letter is minimal then scaling all 3 is negligible
+
+V P
+notification
+
+Y E
+NonEmailNotificationService :)
+
+D B
+digitalNotificatioSvc
+
+D A
+reliableNotificationService :)
+
+N S
+text Service
+
+P P
+LetSMS
+
+A K
+How to maintain foreign keys across tables which belong to different micro services ?
+
+G K
+Is there any way to manage transactions across services ? Can we have callbacks ? Basically will have to make those requests async right ?
+
+S S
+Thank you
+
+A K
+How to roll back data if any service fails in between ? Or is there any other approach to handle this schenario
+
+J R
+Mark, you mentioned about the factors to consider to separate/join the services. When we apply the trade-off between them and bounded context; shouldn't more weightage given to the domain?
+
+Mark R
+@AK - typically you would use what is called a transactional saga with BASE transactions. We talk about those in our other class Architecture The Hard Parts Scenario (doing that with Neal Ford on Friday)
+
+E S
+Hi! Joined late. Is there a recording for this event to catch-up later?
+
+E S
+thanks Mark for confirm !
+
+Andrew E
+ES, Yes you should receive an email with a link to the recording within 48 hours
+
+S V
+in a way any pass services used considered as server less?
+
+S V
+Platform as service
+
+G K
+platform as a service
+
+N B
+nginx
+
+I D
+doesnt this orchestration pattern cause a increased testing landscape? How is this not a form of a monolith in the cloud?
+
+D B
+Orchestration service can be a functional service as well.
+
+E S
+may graphQL fit in the picture ?
+
+G K
+Let's say we have one orchestration service . Which is calling n diff services . Now those n different services are only consumed by orchestrator . Does it make sense to have those diff services ? What advantages do we have
+
+D B
+Not sure why orchestration service is a diff type than a functional service
+
+A R
+DB: scope + dependencies
+
+D B
+A functional service might need to orchestrate a request to multiple microservices. They could be functional for N-S traffic.
+
+S J
+another microservice become Orchastrate
+
+D B
+hmm.. microservice orchestrator then becomes stateful as it calls multiple services . Isn't this A scalability bottlenect?
+
+A A
+is orchestration service just like creating viewmodel from model in MVVM?
+
+S V
+question : is microservice orchestrator communicating with other services using APIs as well?
+
+V G
+is Backend for frontend service be a microservice orchestrator in certain cases ?
+
+Y E
+is it the difference in the count of dependencies that make a functional service an orchestrator?
+
+J R
+If the microservice orchestrator ends up talking to another microservice orchestrator, the bounded context is convoluted right? So what is the right option there?
+
+I D
+How do you handle services that become essential for most services to do work? For example, most services need to call the user service to get information about a user to do work. We've forgone some fault tolerance in that case
+
+D B
+microservice orchestrators will need to scale as per the individual services. Isnt this an integration driver? This makes the calling services cohesive.
+
+B G
+Does all the communication between services happen through the orchestrator?
+
+D B
++1 to BG's question. Since micro services are usually fine grained and API contracts are coarse grained..
+
+N P
+I guess it should depend on the requirement of data. Can we have few orchestration services and others functional services at the same time in the gateway
+
+N P
+can u please re-elaborate the diff between orchectrator n aggregator?
+
+A K
+So ag gregator DB is like monolith DB
+
+G K
+But will aggregator be higly consistent or eventauly consistent ?
+
+R E
+Is there a concern duplicating data in the aggregator database?
+
+M C
+could the aggregator be considered a form of caching in a sense?
+
+J R
+Will it be just the data or the logic that is there in the individual services too?
+
+D A
+caching
+
+A R
+Caching where?
+
+E S
+CAP theorem to the rescue ?
+
+N B
+need to update the aggregator if any of the SLA changes.
+
+D B
+How do we reconcile data between the benefit aggregator and the individual benefit data in case of network failures, loss of messages and such?
+
+N P
+is there a limit to the period of maintaining the state?
+
+I D
+aren't you potentially having a timing defect where a benefit is being created but hasnt made its way through the data pump?
+
+A K
+Can't we have shared DB acr oss microservices
+
+A K
+event sourcing?
+
+J R
+Will it be just the data or the logic that is there in the individual services too?
+
+G K
+I think what ID said . This will make the benifits eventually consistent rigth ?
+
+D B
+Conflicting updates would require vector clocks or other conflict resolution mechanisms? Just like how DBs handle it?
+
+I D
+hmm ok, it would be nice to know how we accomodate that type of defect since timing defects are one of the hardest things i've seen in microservices
+
+L B
+wouldn't the adapter service create too much network load? (instead of creating this adapter functionality within the microserv ices itselfs)
+
+D B
+How do we determine when to write a adapter as a class vs an external service?
+
+Mark R
+ZNODE GCS Type=adapter
+
+Mark R
+ZNODE GCS Type=functional
+
+D A
+If multiple services need to use the adapter, I'd say it's best to create a separate adapter service vs. a class
+
+A R
+LB & DB: good questions to ask as an Architect :) Evaluating trade-offs to make the best decision for your org
+
+D B
+Are shared libraries across micro services a common practice? I thought this was an an anti pattern.
+
+S S
+What would be security concern when adapter is talking to external service / entity say FB ?
+
+D A
+yes, @DB....i'd avoid shared libraries as a means of reuse when possible
+
+S S
+can you suggest a book for securing services/adapter for external entities please
+
+S S
+Also do we plan to talk about GraphQL tomorrow ?
+
+G K
+but that is going to slow down my writes ?/
+
+A R
+Yep
+
+S S
+how is connection pool different than microservices gateway ?
+
+A J
+Is this data service a DAO pattern?
+
+D B
+Multi-tenancy is handled in the Data access layer as well for SAAS architectures. So, its a must?
+
+I D
+why not scale vertically? ie: more CPU\memory over scaling horizontolly? ie: more pods
+
+A R
+ID: another trade-off is when you don't need the scale, you're still paying for it
+
+M A
+we need also connection pool to access database directly and when scaling services we will multiply connections pools. I think a data service is still ok here.
+
+I D
+How do you handle coordinating DB writes and message publishing? I could publish a message for a DB write that fails, or fail to publish a message for a successful DB write
+
+P O
+Enjoyed Day 1!
+
+V P
+Thanks, GN
+
+M C
+Looking forward to tomorrow!
+
+P O
+Thanks Mark
+
+D B
+Fantastic class!
+
+A K
+Thanks
+
+U 1
+Thanks
+
+Y K
+Thanks Mark
+
+L B
+Thank you
+
+Mark R
+Thanks everyone!! See you tomorrow!!
+
+D B
+Thank you so much Mark..
+
+C R
+Thanks a lot. Look forward for tomorrow
+
+B M
+Thanks
+
+J A
+Thank you

@@ -1,0 +1,113 @@
+Hands on Software Design
+========================================================================
+1. Access the repository:
+git clone https://www.agiledeveloper.com/repos/git/hsd080421
+userid: onlineclass
+Password: code4love
+If you run into issues with git clone, please try this command
+git config --system http.sslverify false
+If that does not work, try http instead of https
+Please note, you can't use a browser to access the repository, use git clone
+
+Good design is not the one the one that correctly perdicts the future. Its one that makes adopting the future affordable ---By Venkat Subramanium
+===============================================================================
+PART-1
+######
+
+What is design - Design is a conceptualization of our approach or implementation structure
+and communication of partsto relize the goals
+
+What is good design - Following are chractiristic of good design:-
+------------------------------------------------------------------
+-Simple
+-Maintanable
+-Scalable
+-Loosely coupled
+-Models the realworld
+-Resuable
+-Testable
+-Readable
+-meet the requirement
+-Extensible
+
+Charactiristics of good design-
+------------------------------
+-Simple
+-Fewer moving parts
+-Relevant
+-Fails less and fails gracefully
+-Has less accidental complaxity
+-Changes less frequently and goes through change to fewer partst
+
+Cohesion:-
+---------
+Code that does the one thing and only one thing really well
+Narrow and focuses
+That changes less frequently
+The cost of change is minimized
+
+Coupling:
+---------
+Low instead of high coupling
+Loose instead of tight coupling
+Fewer dependencies and also more flexible (instead of rigid dependency)
+
+Single Responsiblity Principle (SRP)
+------------------------------------
+A piece of code has one responsiblity
+what is responsiblity? - The reason for change for a function or a class should be minimum one reason for change
+
+Kent Beck's 4 rules for simple design:
+--------------------------------------
+-Passes all the tests
+-Reveals its intention
+-Remove duplication
+-Fewest elements
+
+PART -2 
+########
+_What is extensiblity?
+-Tight vs loose vs low coupling
+-Dependency Inversion Principle
+-Example of DIP
+-lab
+
+
+
+PART-3
+#######
+-Design Principle
+-DRY
+-YAGNI(y) You Aren't Gonna Need It (Yet)
+-Open Close principle
+-lab
+
+
+
+PART-4
+#######
+-Inheritence
+-Benefits
+-Drawbacks
+
+
+
+Why long function such a bad idea?- 
+-Hard to test
+-hard to understand
+-Hard to read
+-Hard to changeHard to maintain
+-Hard to debug
+-Hard to reuse
+-Lead to duplication
+-low cohesion
+-high coupling
+
+
+
+
+
+
+
+
+

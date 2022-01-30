@@ -1,0 +1,4 @@
+URL to access Git in 4 Weeks
+---------------------------
+
+https://learning.oreilly.com/attend/git-in-4-weeks/0636920055092/0636920055091/

@@ -1,0 +1,6 @@
+
+Angular 10 codebase
+-------------------
+https://github.com/shaunwa/angular-ots-june2021
+
+https://app.netlify.com/

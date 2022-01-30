@@ -1,0 +1,150 @@
+
+Hands-on AWS in 3 Weeks
+======================
+
+GIT - https://github.com/arpcefxl/hands-on-with-aws
+
+Joan B
+Please note: The “Group Chat” will be part of the recording so please do not post personal information (such as email addresses) or anything confidential.
+
+Joan B
+Hello everyone and welcome to Week 2 of “Hands-on AWS in 3 Weeks” with Chad Smith. We will begin shortly! Course material can be accessed in the “Resource List” widget.
+
+Joan B
+The event has started and you should now be hearing Chad. If you have any audio/connection issues during today’s session, please close any applications you are not using in the background and try refreshing your browser. Thank you.
+
+S V
+Can you pls help us the diff bw IGW and NAT
+
+R W
+can u pls elaborate more about the NAT gateway and its role
+
+S M
+what is diff btw Gateway and Interface Endpooint
+
+S M
+for s3 connectivity we use GW oor Interfae as it supports both
+
+R W
+Thanks for the cla rification
+
+C T
+Then isn't there any ingress from NATGW to the components behind ?
+
+C T
+clear ! thanks
+
+C T
+You can also combine these approaches right ? Or will it be a mess in the end if we won't stick 1 ?
+
+S M
+for rouote table for private subnet u said outside traffic goes to NAT gateway as target will that not forward t o EC2 within private subnet via translatin?
+
+V R
+can ec2 in private interact with that of public subnet
+
+V R
+connect
+
+C T
+Sorry if I missed but VPC Peering is 1-1 then ? isn't it possible to peer multiple ?
+
+B M
+Wh ats the difference b.w Transit Attachment type as Peering vs VPC?
+
+Joan B
+If you have questions for Chad please post in the “Group Chat” at any time during today’s event.Thank you!
+
+B M
+Is anyone need more in depth on AWS Networking .. This is a great talk by AWS -- https://www.youtube.com/watch?app=desktop&v=hiKPPy584Mg
+
+B M
+if***
+
+Joan B
+Enjoy break. For your convenience, we are recording this event and will have it available within 24- 48 hour. Once it’s ready, you will be notified by email. Thank you.
+
+S G
+okay , are we uploading the recorded sessions somewhere ?
+
+Joan B
+SG: You can access your archived recordings on your active O’Reilly profile. Log-in, in the right corner of the home screen, click the “person” icon, select profile. Your archived recordings are listed near the bottom of the page.
+
+S G
+Thanks Joan B.
+
+Joan B
+SG: You're welcome!
+
+Chad S
+https://www.oreilly.com/attend/aws-certified-advanced-networking-specialty-crash-course/0636920382539/0636920060513/
+
+Chad S
+https://www.oreilly.com/attend/aws-certified-sysops-administrator-associate-soa-c02-crash-course/0636920057526/0636920057525/
+
+C T
+Why would you prefer to not use versioning? Cost or any other reason ?
+
+C T
+responded thanks
+
+R D
+can multipart upload and transfer accele ration both be done together ?
+
+Joan B
+Welcome back from break. You should hear Chad speaking now.
+
+R D
+does number or rate of objects into buckets makes any issue, if yes - any suggestions to improve it ?
+
+Chad S
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops.html
+
+R D
+is EFS underneath a EBS based storage ? as it allows files updates.
+
+B M
+what is rsize & wsize?
+
+G B
+Ok
+
+R D
+can you please talk what is Bursting in this case ?
+
+R D
+what ear ns credit ?
+
+Joan B
+Enjoy the final break for the day!
+
+B M
+if writes happens synchrono usly, will it cause performance hindering?
+
+B M
+thx
+
+M V
+Intermediate disconnection in audio even after browser refresh
+
+Joan B
+MV: Are you using chrome?
+
+M V
+yes
+
+Joan B
+Audio is clear on the platform. You can also try to clear your cache and rejoin or try using Chrome or Firefox as the browser. Disconnecting from VPN will also help. Thank you!
+
+M V
+ok
+
+B M
+seems like we have only 1 instance as Writer and Reader, typically we have reader instances as well. Right?
+
+B M
+Thanks Chad!
+
+R D
+Thanks Chad.
+

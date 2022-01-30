@@ -1,0 +1,327 @@
+Spring and Spring boot in three weeks by Ken Kausen
+---------------------------------------------------
+27/5/2021  - DAY THREE
+--------------------
+
+Torben Junsen  -- for hibernate
+https://thorben-janssen.com/
+
+=====
+Derek H
+Hello everyone, welcome back to Spring and Spring Boot in 3 Weeks taught by Ken Kousen.
+
+Derek H
+This course is being recorded. It will be ready to view 24-48 hours after class ends, and you will have access to it as long as your O’Reilly Learning account is active.
+
+Derek H
+Once available, you will receive an email with the recording link. You can also view the recordings on the course landing page: https://learning.oreilly.com/attend/spring-and-spring-boot-in-3-weeks/0636920055088/0636920055087/
+
+Derek H
+This is a group chat – please be mindful of any information you decide to share while using it.
+
+Derek H
+We are not responsible for any links to third-party websites or resources, or for your contacts and interactions with third-parties that take place outside of  our website or services.
+
+R S
+Hello from Chicago
+
+T S
+Hi from Monheim, Germany
+
+P G
+Hello from Pune,India !! last week :)
+
+Derek H
+Class has started and you should now be hearing Ken. If you have any audio/connection issues during today’s course, try refreshing your browser.
+
+P J
+Yes, it is available
+
+A P
+Hello everyone. I can confirm that the links from previous weeks are available on course landing page.
+
+Kenneth K
+http://www.kousenit.com/springboot/
+
+R S
+Ken, will the katacoda exercises be available for use after this course?
+
+Kenneth K
+https://media.pragprog.com/newsletters/2021-05-26.html
+
+R S
+thanks!
+
+R S
+please post that link
+
+I K
+What is the best way to apply your new book in real life, in other words to internalize it's philosophy?
+
+I K
+its
+
+I K
+Will do! Thanks!
+
+M G
+I am not sure you are sharing your screen but sound like you intend to?
+
+I K
+Keeping up with What's New in Spring is a full-time job. 😎😜
+
+Derek H
+MG, refresh your browser.
+
+Derek H
+Ken is sharing in the media player
+
+M G
+Thanks that fixed it
+
+R S
+In terms of MongoDB / other noSQL to be used a backend NoSQL DB, how is ID generation strategy to be considered ? keeping in the Sharding etc that these provide.
+
+B S
+isn't your test running against a mock, so really you wont be able to test column name differences?
+
+B S
+Another question Ken, wouldn't it be better to still leave the column annotations so someone else coming along doesn't wonder how the mapping (magically) works?
+
+B S
+ok, Thanks
+
+R S
+this change comes with the new spring version?
+
+Kenneth K
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
+
+B S
+dark mode.... Love dark mode, saves my eye. I think I just opened a can of worms..
+
+J L
+ENSIGN should have single quotes too.
+
+P M
+Dear Ken you did to complicated. In the Documentation that you showed us they say:If you are not using Spring Boot’s developer tools but would still like to make use of H2’s console, you can configure the spring.h2.console.enabled = true
+
+P M
+OK I see
+
+P V
+if there are more than one Data Source - in the sense - we have mysql and postgres are been used - how do we specify while Doing the persistence for there respective entities
+
+P M
+I think it is because you application doesn't have a POST implementation
+
+P M
+OK
+
+Derek H
+Break time - class will resume shortly.
+
+P K
+Off-topic question, how to get the Popup notifications for combination keys commands that were triggered? Looks useful
+
+Kenneth K
+I'm using the Presentation Assistant plugin
+
+Kenneth K
+It shows the Windows/Linux shortcuts whenever I do a Mac one
+
+S S
+https://plugins.jetbrains.com/plugin/7345-presentation-assistant
+
+P K
+Thanks Ken
+
+S S
+you can configure the mac one, it just needs an extra step, I think it's adding a keymap
+
+S S
+"In order to show shortcuts for macOS you need to install 'macOS Keymap' plugin"
+
+Kenneth K
+Hah. I guess that came with my version by default
+
+S S
+When starting a new application, how do you decide which dependencies you want? Do you start with the most basic ones and keep adding when something is needed or do you try and think beforehand what you will need?
+
+S S
+Will we touch on spring security in this course?
+
+Kenneth K
+Most Spring apps use the same basic set of dependencies, so I start with those. Then I add additional ones the same way I showed, based on a use case
+
+Kenneth K
+We won't actually implement Spring Security in this course (it's tedious and not all that illuminating), but I'll show you where the docs are and I can talk about the basics
+
+S S
+Thank you very much for the fast replies!
+
+S S
+A bit offtopic, and sorry for the many questions, but do you think that touch typing and having a fast typing speed are essential skills for developers?
+
+Kenneth K
+No prob. Keep 'em coming :)
+
+Kenneth K
+I don't know if they're essential, but they certainly are helpful. I've always benefitted from the fact I took a typing class in high school with the business students. Of course, my carpal tunnels aren't as happy about it :)
+
+S S
+I understand, thanks! Do you use any special devices in your set-up, like a vertical mouse or anything of the sort?
+
+Kenneth K
+No, I just use a touch pad. I haven't used a mouse for years, though maybe that's not necessarily a good thing
+
+Kenneth K
+I think I developed that habit when I started traveling so much
+
+Kenneth K
+No longer an issue, of course :)
+
+Derek H
+Break has concluded. Class will now continue.
+
+S S
+Thanks for the replies! :)
+
+S S
+hey Derek, will there be a place to give feedback for the entire course at the end?
+
+Derek H
+Yes, at the end of class you'll see a course evaluation on your screen
+
+S S
+thank you!
+
+Derek H
+You're welcome
+
+B S
+gradle to maven lugin by gradle: https://docs.gradle.org/current/userguide/publishing_maven.html
+
+P V
+swagger
+
+A P
+swagger
+
+B S
+Yes, that's code smell...
+
+P G
+cricket :)
+
+P K
+hockey
+
+R S
+soccer
+
+B S
+Fencing
+
+P G
+hockey is our national game ;)
+
+P V
+field hockey
+
+P V
+If we are using APache ZooKeeper for the Service Discovery - is the Class Implementing the CommandlineRunner is the right hook to put such Code?
+
+P M
+How about formatting the SQLs?
+
+P M
+How about @JpaDataTest annotation in the test?
+
+P M
+Many Thanxs
+
+R S
+Ken, can you please commit notes.txt
+
+Kenneth K
+Good idea. I'll move that file over the persistence app in the GitHub repo and commit it, since it's all about JPA anyway
+
+R S
+Thanks
+
+S S
+Thanks!
+
+Derek H
+Break has concluded. Class will now continue.
+
+R S
+Please give us the hibernate references
+
+P M
+Me too :-D
+
+P M
+torben
+
+R S
+i've worked with hibernate and couldn't find suitable references
+
+Kenneth K
+https://thorben-janssen.com/
+
+M L
+FYI: His name is pronounced:
+
+M L
+Torben Junsen
+
+R S
+Thanks!
+
+S B
+Is javax validator and hibernate validator the same?
+
+A P
+How is @GetMapping different from @RestController
+
+B S
+Nice one @RequestMapping at class level..
+
+Derek H
+Final break time - class will resume shortly.
+
+B S
+Would that Product Rest Controller be an interface with an implementing class if you were building a Production app so as not to expose implementation?
+
+Kenneth K
+Not normally. I don't mind making my controllers and services actual classes, because I don't plan to implement them in multiple different ways
+
+S S
+This might be too out of scope, let's say I have a Spring backend API and I want to put a frontend over it, with a javascript framework. How would I package them both together? And how would I structure a single project with both the frontend and backend?
+
+Derek H
+Break has concluded. Class will now continue.
+
+S S
+Many thanks for the extra detailed response! You're amazing!
+
+R S
+This is very interesting
+
+P M
+Many thanks too I heard this CORS many times without understanding
+
+P M
+it
+
+S B
+Hi Ken, are @Valid and @Validated annotations alternatives to using Spring's implementation of the Validator interface?
+
+S S
+T hanks a million!
+
+R S
+anyone else having problem with the audio?
+

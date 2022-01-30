@@ -1,0 +1,884 @@
+Microservices in 3 Weeks by Sam Newman
+======================================
+
+
+Hi everyone and welcome to Week 1 of today’s online live training “Microservices in 3 Weeks” with Sam Newman. Are you ready for Week 1?
+
+J G
+hi
+
+S C
+Excited!
+
+P O
+Hi
+
+J G
+Where are you people connecting from?
+
+P O
+Galway, west coast of Ireland
+
+J G
+Amsterdam here
+
+S C
+Massachusetts
+
+S C
+I'm not hearing any sound...is it only me?
+
+J G
+it just stopped
+
+P O
+I hear the music fine - try refreshing your browser @JG
+
+P O
+The usual advice from the operator is to use Chrome, don't use a VPN and refresh the browser :o)
+
+J P
+Mabuhay!
+
+J P
+(in English hello with warm regards!)
+
+S S
+Nice music
+
+S S
+Hello Everyone
+
+J P
+from the Pearl of the Orient, The Philippines!
+
+M H
+Hello from Algeria!
+
+J H
+Hello from Scotland!
+
+S S
+Hello from India
+
+N S
+Hello, Nirbhay from INDIA
+
+Patrick D
+Class has started everyone. If you’re experiencing any video and/or audio issues, please try giving your web browser a quick refresh. Thanks :)
+
+J P
+Hi
+
+S A
+Hanging way too much for me, the video
+
+S A
+refresh is not helping
+
+B M
+Hello
+
+m v
+Hi
+
+Patrick D
+S A , try a different web browser.
+
+R P
+hii
+
+A D
+Hi Sam & Hello everyone
+
+J H
+microsessions
+
+K S
+Hello Everyone
+
+M K
+Hello Everyone
+
+S S
+can we stop video output ?
+
+S S
+I am on limited data
+
+J G
+you can hide that widget
+
+S S
+did that
+
+S S
+but still it is consuming data
+
+J G
+just the voice, no? or it sends the entire video? :s
+
+J L
+Full video
+
+J D
+this presentation should be in MS. 1 service for audio and 1 for video :-)
+
+S S
+this sucks
+
+H C
+:-)
+
+B H
+Microservices? I've used the unix command line for 3 decades now... Aren't the unix command line tools and linking them through pipes basically the first implementation of "microservice ecosystems"? ;-)
+
+S S
+I gotta drop then before I end up exhausting my data
+
+L C
+Hello from Spain
+
+X P
+is he showing slides? I just see the thank you note for the vote submission
+
+X P
+nvm
+
+G C
+Hello from Sardinia (Italy) !!
+
+J L
+Hello G C from Sardinia!
+
+R P
+where can i find the recording of this session.
+
+M N
+Hello from Canada!
+
+A S
+will there be hands-on experience in this session ?
+
+I C
+@RP session recordings are sent to your email 2 days after the class.
+
+G C
+will a recording link be sent to email?
+
+A J
+You can usually find the recording in the same place as the link where you join this training
+
+G C
+Cool Thanks !
+
+B H
+Which one is the sixth microservice?
+
+J L
+G C I spent a lot of time in Brindisi and some on the island of Sicily but never made it to Sardinia unfortunately.
+
+H C
+slide 18
+
+G C
+Sunny Place ;)
+
+I C
+Does this dependency break independent deployability?
+
+M S
+Hi Sam, what happened to your right hand?
+
+V K
+Is audio dropping for you guys intermittently(reloaded multiple times)
+
+B S
+happened twice so far to me
+
+E W
+Chrome was spotty for me, Safari has been fine
+
+J L
+nope at least not yet
+
+S O
+audio fine for me.
+
+A 4
+@MS, use the Q&A :(
+
+G C
+using chrome all good audio and video
+
+J M
+video and audio ok on Safari here
+
+Patrick D
+Please try testing your system with this link below, if you're running into any further issues:
+
+Patrick D
+https://event.on24.com/utils/test/testYourSystem.html?checkBrowser=true&checkOS=true&checkBandwidth=true&checkCookie=true
+
+A K
+Can there be shared database between micro services via data grid server
+
+A J
+Guaranteed Delivery is a feature I think
+
+A J
+that you need in such cases if events must be always delivered
+
+B S
+for me network breaks off quite often, but i guess ots because im in VPN
+
+Patrick D
+If you disconnect from your VPN it definitely may help with the stream.
+
+B H
+You might want to take into account that a guarantee a message will be sent is still no guarantee that the recipient can even parse it... The delivery guarantee itself therefore does not mean that the recipient will be able to use it...)
+
+S B
+Hi Patrick, would you be showing some code samples later in the class?
+
+G C
+I did kill the vpn just in case
+
+A J
+Synchronous vs Asynchronous
+
+L P
+am I the only one where the audio drops quite often?
+
+A J
+Req/Res may be synchronous and Event can be async i my thinking ?
+
+K S
+SB ask questions in Q&A widget
+
+A 4
+no audio drops on my side, MP
+
+J G
+my slides are stuck I think
+
+K S
+check your network
+
+A 4
+slide 42 from logical to physical is now
+
+J G
+this system / UI is kinda crappy, it's failing randomly for almost everyone
+
+A 4
+ya, but there is one universal solution for all issues, refresh
+
+D B
+mines been pretty consistent
+
+J G
+I wouldn't call it a solution, but a workaround :)
+
+A J
+mine too has been consistent
+
+K S
+works fine for me so far
+
+A 4
+ok, my vocab is poor:)
+
+D Z
+Hi Sam, so, if I have 3 copies of micro service for scaling that's OK to have the same DB, right?
+
+V K
+for me it was a problem on tablet, works fine in safari though
+
+Sam N
+Sagas and microservices (avoiding distributed transactions): https://learning.oreilly.com/library/view/building-microservices-2nd/9781492034018/ch06.html#workflow-chapter
+
+A J
+Thanks for the link Sam
+
+I H
+How do you do reporting then?
+
+J S
+Will be cover db design concepts for Microservices
+
+A D
+will have recording of these sessions ?
+
+N B
+I believe there is no specific DB design for microservices. Just think that each MS is an application with its own DB.
+
+S M
+@AD - recording will be available after 24 hours.
+
+A D
+thanks :)
+
+B M
+even with monoliths with layered architecture, db is always a seperate layer
+
+N B
+I think @JS speaking of tightly coupled service logic with DB, or even MS where all logic is in DB.
+
+N B
+in MS world it is still possible, but you would need to still split db into several dbs.
+
+P D
+what are my options to create copies of microservice when we use Bare metal or virtual machine
+
+N B
+After splitting DB, you will most likely realize that it is much easier to move all logic to MS and use DB as just storage.
+
+J M
+AWS Lambda or GCP Cloud Functions...
+
+D B
+@pd are you talking about redundancy & loadbalancing? you would need a redundant physical server and some kind of loadbalancer sitting in front of them
+
+P D
+knative serverless can provide a FAAS/PAAS option
+
+S L
+How is the observability & monitoring is implemented for micro services architecture?
+
+P D
+Are there any open source or other tools to see how good/bad our microservices are doing on network calls.
+
+D B
+I think you guys want to put your questions in the QA box unless you want to ask everyone attending
+
+E W
+Check out APM tracing. Datadog has some decent solutions for tracing between services
+
+D B
+@PD opentelemetry and something like honeycomb probably
+
+N B
+@SL There are a bunch of ways. Take a look at Prometheus.
+
+V K
+no break music today ;-)
+
+N B
+But all solutions are "MS dumps to stdout and some other system will pick it up"
+
+N J
+Sam, your mic is still on? :)
+
+P D
+Can you please explain why we put the gaetway infrant of microservice for UI and External system
+
+Sam N
+Sorted - thanks!
+
+J G
+Please mute your mic. Thank you.
+
+N B
+@PD +1 :) Based on Sams post the UI GW is mostly to allow other MS to be very specific. So the GW can aggregate specific info from MSs and return it.
+
+A D
+Is No-SQL DB better than RDBMS in micro service architecture ?
+
+N P
+share the roadmap what are the services a begineer to use to develop a robust app like uber
+
+N P
+share the roadmap what are the services a begineer to use to develop a robust app like uber
+
+N P
+share the roadmap what are the services a begineer to use to develop a robust app like uber
+
+G R
+where should we put the front end code (HTML, JavaScript, CSS) in kubernetes world?
+
+N B
+@AD SQL and NoSQL dbs are for different scenarios. So you should compare them in the context of data. If your data is relational - go RDBMS, if the data is just key-value, or not consistent jason - go NoSQL.
+
+E W
+@GR I have seen it in a bucket with a CDN, or on its own server
+
+Sam N
+Cloud lock in: https://martinfowler.com/articles/oss-lockin.html
+
+D B
+@GR you can put it in a webserver container, you can put it in an s3 bucket with a cloudfront distribution in front of it, you can deploy it to a service that is CDN based like Vercel or netlify
+
+G R
+Thank you D.B.
+
+Sam N
+Deployment options: https://learning.oreilly.com/library/view/building-microservices-2nd/9781492034018/ch08.html#deployment_chapter
+
+Sam N
+Service meshes and API Gateways: https://learning.oreilly.com/library/view/building-microservices-2nd/9781492034018/ch05.html#service-mesh-api-gateways
+
+B H
+Maybe you should have split "Sometimes, trying to make it always in the future" and "Sometimes and happy that way"...? For me it's the former.
+
+G B
+Unable to hear
+
+M M
+is it frozen?
+
+A J
+Has the video cut off ?
+
+A H
+frozen
+
+D R
+Video stopped
+
+R F
+yes
+
+Z Y
+Frozen for me
+
+M S
+same here :)
+
+B M
+we lost you Sam
+
+E G
+just froze
+
+S R
+yes it is frozen
+
+W S
+frozen!
+
+S M
+Yes
+
+J G
+sound died, already refreshed
+
+B H
+same here..
+
+R P
+same
+
+G R
+Sam's Video is stuck
+
+v s
+yes
+
+G C
+yes same here
+
+U G
+Stuck
+
+I H
+yep
+
+V E
+frozen
+
+S M
+frozen for me
+
+M H
+frozen
+
+S B
+froze again
+
+B H
+reload didn't work either...
+
+N B
+same
+
+V B
+Freeze
+
+M S
+I thought, it was my problem..
+
+M C
+frozen
+
+M M
+frozen
+
+P G
+me also
+
+A K
+frozen for me aswell
+
+G C
+rozen
+
+A G
+Same
+
+M S
+frozen for me
+
+B M
+frozen
+
+D T
+Stuck
+
+L C
+problem here also
+
+M M
+f
+
+S M
+@Pat - we lost Sam N
+
+G C
+*frozen
+
+M N
+same here
+
+A G
+refreshed the browser but didn't help!
+
+m v
+same here
+
+G M
+same here
+
+L P
+same here
+
+M S
+anyway to communicate Orielly regarding the same?
+
+W N
+same here
+
+I H
+can someone take over ;-)
+
+J P
+same here, sam's frozen like a whitewaker
+
+M M
+press f for respect
+
+P C
+yup me too
+
+D L
+frozen too
+
+M S
+if somebody can present as well as S N ;)
+
+S M
+@IH - I will :-), please get me the permission
+
+B M
+seems like deployment went without backward comaptibility ... :)
+
+G M
+@IH I can read slides :)
+
+S M
+lol
+
+S S
+may be deplyment of video is not distributed
+
+J S
+STUCK
+
+I H
+LOL
+
+M P
+lol:)
+
+M S
+:)
+
+S B
+are we back?
+
+G M
+nop
+
+M P
+nope
+
+P C
+nope
+
+S M
+not yet
+
+J G
+no
+
+R P
+On the way it seems
+
+P D
+no
+
+G M
+yes
+
+M S
+we are back ..
+
+J G
+I m back
+
+H J
+oh. i restarted my chrome 2-3 times
+
+P D
+yes
+
+G R
+(y)
+
+M H
+It's back
+
+S R
+Thank you
+
+R T
+circuit breaker
+
+J D
+this is what splitting monlothic to microservices feels like
+
+P C
+Using micro services for ETL processing right thing to do
+
+S M
+PC - microservices can be used everywhere wherever you would like to isolate services to a business domain
+
+G R
+what about a J2EE enterprise app (.EAR)? can it be considered a microservice?
+
+J S
+ear is lib for app
+
+G R
+Seems like Java9 Modules are a good candidate for this situation... ofcource database should not be shared between multiple modules
+
+B M
+I think what really worked for us and I think is a fundamental part of building sevcies/api.s is go have an APX (API Design), defined schema and contractors upfront and abide that.
+
+P D
+IN event based architecture, if I am only broadcasting, then there is automatic hiding ?
+
+Sam N
+Making backwards incompatble changes: https://learning.oreilly.com/library/view/building-microservices-2nd/9781492034018/ch05.html#idm45986681751288
+
+G B
+Unable to hear you
+
+M S
+I am able to hear, try refreshing the screen
+
+A P
+S ound works fine for me. Try refresh your browser.
+
+V K
+I want to generate swagger based on API responses automatically , schema management can help ?
+
+Sam N
+Database views: https://learning.oreilly.com/library/view/monolith-to-microservices/9781492047834/ch04.html#ch05c-materialized-view
+
+A K
+Are we taking break ?
+
+V E
+yes
+
+N J
+what are you 3D printing?
+
+s s
+would love to hear of use cases or real-world transformation that are taking place...
+
+V K
+Yoda is probably 3D printed ;-)
+
+M S
+good point S S. Real world solutions will really help us.
+
+J P
+Sam somehow reminds me of Eddie Vedder of Pearl Jam :)
+
+A P
+Micorservices is a evolutionary journey. It means it will take us multiple interactions to get it right and right is different for every single business environment.
+
+M H
+Thank you
+
+J G
+Presentation is stuck. Hope you are not referring to any slides right now.
+
+M S
+Sam is answering the questions. Still having the slide as - SCHEMA CHECKING
+
+M S
+yet to start a new topic after the brak
+
+J H
+Agreed with S S. Real world, not theoretical, examples would be helpful.
+
+S J
+Is schema you are referring to a API schema?
+
+M S
+Thanks Sam for sharing some real world examples ... Hoping to hear more of this in coming sessions :)
+
+J P
+data consistency, always get tricky with distributed systems with their own db store
+
+M H
+Embrace eventual consistency, this is how the world works
+
+M E
+Preferred approach is to use Dapr now
+
+S C
+Dapr?
+
+M E
+Distributed Application Runtime - dapr.io
+
+S M
+Cognitive Overload - I love that term
+
+G R
+Can manual approval (workflow automation) be implemented with MicroServices?
+
+B L
+Can we use microservice if multiple modules dependent on each other in relational database
+
+M E
+But truthfully we need a lot of that stuff for any complex system
+
+M H
+Boring technology is good
+
+S C
+@MH agree...KISS principal always rules
+
+J P
+DHH is probably right with saying "the majestic monolith" is always sufficient for most use cases.
+
+J P
+https://m.signalvnoise.com/the-majestic-monolith/
+
+M H
+Always start with a modular monolith
+
+A P
+@BL it seems you have a monolith over there. If you can break it down in independent services you can start building a microservices system. Try to use Domain Driven Design to evaluate if you can break the monolith.
+
+B M
+it all depends, no one answer fits all situation. Everyone talks about mostly based out of their experience. Knowing all different styles is key and at the end we pick what best works for us/business.
+
+P D
+Which are the tools for monitoring microservices
+
+J P
+new relic
+
+M H
+@BM, yes, most projects will use a mixture of architecture styles
+
+E W
+Prometheus, New Relic, Datadog are a few
+
+M E
+Do a search for DevOps Observability
+
+M E
+Some interesting stuff coming out around tracing being the key tooling
+
+M E
+Sam is right. Collaborating with Ops is crucial
+
+M E
+A microservice system cannot go "over the wall"
+
+P D
+Does Prometeus help in in application performance monitoring ?
+
+B M
+App Dynamics, New Relic, Micro Meter, tlegrapgf,/collectd,
+
+E W
+Also, good logging practices ie https://brandur.org/nanoglyphs/025-logs
+
+B M
+wavefront is another observability tool
+
+J P
+another reason to avoid microservices
+
+J P
+the existing software stack is not yet modular
+
+E W
+?
+
+M E
+almost all of the modern stacks can be modularized
+
+B M
+you make them modular if that's giving you problem. Again it all depends on the issues one is facing
+
+M E
+we are in the habit of using frameworks like JBoss. if we drop that life gets a lot easier
+
+J P
+apps running on jboss can be modular if done right (even with legacy J2EE)
+
+M E
+Sam's point about not bringing in new tech does not mean that we cannot change how we apply old tech. .NET is a good example
+
+J M
+drop certification dream and focus on learning
+
+A P
+Microservices == Add Complexity == More time to market more budget more problems to solved. Think carefully before embark in the journey.
+
+M E
+@JP the framework is heavy and no longer really needed
+
+J P
+with legacy systems it is still being maintained
+
+J P
+and there's plenty of legacy systems that doesn't need to adopt microservices
+
+Sam N
+Microservice security: https://samnewman.io/talks/insecure-transit-microservice-security/
+
+B M
+@AP I do not agree on time to market .. if you have done it right, yes at start it a learning curve but once matured brings lot of agility
+
+M E
+@AP - any complex application is going to have those challenges. that is not a reason to avoid microservices

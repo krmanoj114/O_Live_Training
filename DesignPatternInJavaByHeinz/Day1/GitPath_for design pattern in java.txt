@@ -1,0 +1,12 @@
+
+ 
+ 
+ 
+ 
+  URL: https://www.javaspecialists.eu/git/safari/dpc5-4231.git
+ Username: safari4231
+ Password: F7gWdLKq
+ 
+ URL: https://www.javaspecialists.eu/git/safari/dpc5-1844.git
+ Username: safari1844
+ Password: FvXhvDVc

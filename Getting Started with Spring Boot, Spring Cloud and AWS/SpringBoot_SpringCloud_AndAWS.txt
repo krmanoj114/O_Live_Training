@@ -1,0 +1,137 @@
+
+Important URL
+------------
+adhusudhan K
+https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/aws-sdk-java-dg.pdf
+
+Madhusudhan K
+https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/aws-sdk-java-dg-v2.pdf
+
+Madhusudhan K
+https://start.spring.io/
+
+Madhusudhan K
+https://awspring.io/
+
+Shannon C
+The recording of class will be ready for you within 48 hours, here: https://learning.oreilly.com/attend/getting-started-with-spring-boot-spring-cloud-and-aws/0636920053451/0636920054381/
+
+
+Madhusudhan K
+https://github.com/madhusudhankonda/olt-boot-cloud-aws
+
+Madhusudhan K
+https://github.com/madhusudhankonda/olt-boot-cloud-aws-v2
+
+
+
+Madhusudhan K
+https://github.com/madhusudhankonda/olt-boot-cloud-aws
+
+
+hannon C
+Hello everyone and welcome to Getting Started with Spring Boot, Spring Cloud and AWS, with Madhu Konda.
+
+Shannon C
+We'll begin in 11 minutes. We hope you enjoy the course!
+
+Shannon C
+The recording of class will be ready for you within 48 hours, here: https://learning.oreilly.com/attend/getting-started-with-spring-boot-spring-cloud-and-aws/0636920053451/0636920054381/
+
+Shannon C
+Note: This is a group chat–please be mindful of any information you decide to share while using it. We’re not responsible for any links to third-party websites or resources, or for your interactions with third-parties that take place outside of our service
+
+Shannon C
+Note: The Group Chat will be part of the recording so please do not post personal information (such as email addresses) or anything confidential.
+
+Shannon C
+Thanks! :)
+
+Shannon C
+Hello everyone and welcome! The class has begun and you should be able to hear and see Madhu now in the media player.
+
+Shannon C
+If you experience any issues with audio or video, please try refreshing your browser. Chrome is the recommended browser. We also recommend that you disconnect from any VPN.
+
+Shannon C
+You can download the slides from the Resources List widget--open on the right-side of the screen.
+
+B A
+hello
+
+
+
+Madhusudhan K
+https://github.com/madhusudhankonda/olt-boot-cloud-aws
+
+Madhusudhan K
+https://github.com/madhusudhankonda/olt-boot-cloud-aws-v2
+
+
+
+Madhusudhan K
+https://github.com/madhusudhankonda/olt-boot-cloud-aws
+
+S U
+HI Madhu, Will this recording be available after the class
+
+Shannon C
+The recording of class will be ready for you within 48 hours, here: https://learning.oreilly.com/attend/getting-started-with-spring-boot-spring-cloud-and-aws/0636920053451/0636920054381/
+
+
+
+Madhusudhan K
+https://aws.amazon.com/
+
+S R
+Hope you are safe in London. I heard about Covid new strains
+
+M M
+is hands-on sessions are there in spring boot
+
+Madhusudhan K
+aws s3 ls
+
+P M
+is it a FIFO or standard queue that you created?
+
+Shannon C
+Madhu is looking for questions in the Q&A widget--please post any questions there.
+
+Shannon C
+Thanks!
+
+L D
+How do you start AWS CLI once installed ?
+
+P M
+what is the naming convention used for FIFO queues?
+
+M V
+I can't use Amazon console as it is blocked on corporate network.
+
+P M
+font size is perfect
+
+K M
+My intelliJ doesn't show Spring option in the new project..
+
+G P
+could you please send aws dependency here?
+
+C T
+@K M, the paid intelliJ version has Spring option.
+
+E A
+@G P look here https://github.com/madhusudhankonda/olt-boot-cloud-aws/blob/main/sqs/pom.xml
+
+D G
+also is the aws dependency available via spring initializr
+
+G P
+thanks @EA
+
+J Q
+Teacher , pelase complete the closed tag for the secret key !
+
+M

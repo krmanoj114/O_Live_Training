@@ -1,0 +1,9 @@
+
+Exploratory Data Analysis with Python
+--------------------------------------
+
+Exploratory Data Analysis with Python (Jupyter Notebook) - https://ot-proxy.binderhub-prod.gcp.oreilly.com/user/binderhub-explo-sis-with-python-7wlqgego/tree
+
+Code base - https://resources.oreilly.com/binderhub/exploratory-data-analysis-with-python
+
+Kaggle - https://www.kaggle.com/fedesoriano/stroke-prediction-dataset

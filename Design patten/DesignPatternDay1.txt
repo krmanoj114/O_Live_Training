@@ -1,0 +1,2036 @@
+Design Pattern Day 1
+====================
+
+Timestamp 
+Lindsay V
+👋🏼 Hello and welcome for Week 1 of the course “ Design Patterns in 3 Weeks” presented by Eric Freeman and Elisabeth Robson. We will get started shortly.
+
+Lindsay V
+⛔️ This is a group chat – please be mindful of any information you decide to share while using it.
+
+Lindsay V
+We are not responsible for any links to third-party websites or resources, or for your contacts and interactions with third-parties that take place outside of our website or services.
+
+Lindsay V
+🎥 All of the O'Reilly live events are recorded. You will receive an email with the recording within 24-48 hours. You will also be able to access the recording by visiting the link that you used to join this session.
+
+Lindsay V
+🚫 Please do not post anything you consider personal such as your email address into the Group Chat because it is being captured on the recording of this course.
+
+Lindsay V
+📚 If you experience any audio/visual issues please try refreshing your browser as this will usually correct the issue.
+
+D M
+Hi all from Fredericksburg, VA, USA
+
+m b
+hello! how are we doing how are we feeling? :)
+
+B C
+Hi from P retoria South Africa
+
+v G
+Hello all :)
+
+L S
+Hello from Barcelona!!
+
+M G
+Hello from Portland, Oregon, US
+
+S M
+Hello from UK
+
+J E
+Hi from Umeå Sweden
+
+M A
+Howdy from San Jose, CA
+
+C L
+hi from Costa Rica
+
+A H
+Hello from Cluj-Napoca, Romania!
+
+R B
+hello from Atlanta, GA
+
+S P
+Hi, I don't hear anything. Is it the case of others?
+
+M K
+Hello from Limerick, Ireland
+
+A P
+I can hear well
+
+M K
+I'm able to hear clearly
+
+T B
+I can hear clearly as well
+
+S P
+I can hear now, Thank you
+
+B S
+Sounds great Eric. Looking forward to this. Pumped up!
+
+S M
+Purely Academic - true which is boring..your book is really nice.
+
+Elisabeth R
+thank you @SM
+
+C J
+Good morning from Silicon Valley
+
+Elisabeth R
+I love how our audience is so global!
+
+V S
+Good morning from India
+
+D X
+From Asia :)
+
+V A
+Good Morning from Delhi, India
+
+V S
+:)
+
+Eric F
+hi all, Austin Texas here
+
+C M
+Dickson, Tennessee (US)
+
+S M
+Hi All, Dallas Texas here.
+
+M H
+Good afternoon from Denmark
+
+R B
+Good morning from Reston, VA
+
+S K
+Hello from berlin
+
+T M
+Hello from Niceville, FL
+
+R K
+Hi from Zug, Switzerland
+
+A L
+Hi from London UK
+
+A K
+is Media player running or is it for me only
+
+S P
+refreshing the page worked for me
+
+Lindsay V
+Eric is on the media player at the moment. If you don't see him as mentioned a refresh should bring him back.
+
+V A
+Is it only for Object Oriented programming
+
+Elisabeth R
+The patterns we are discussing are for OO programming, yes. Some of them can apply to other models, and there are other patterns for other domains too.
+
+V A
+Ok
+
+S C
+Video hanging for everyone?
+
+B G
+It's fine for me
+
+Eric F
+Okay here
+
+M K
+nope, it's okay for me
+
+C M
+Refresh should fix it
+
+Y S
+Hello Elizabeth and Eric.
+
+F P
+audio comes and goes
+
+R Y
+I am sorry, if you forgot to share the presentation.
+
+Lindsay V
+The presentation is available from the Resource List.
+
+j T
+Sound and slides are fine for me using Firefox browser in Spain.
+
+Lindsay V
+If you are having issues with the audio, please try to close down any applications that may be competing with your bandwidth. Also be sure not to be on a VPN.
+
+F P
+that is not the problem (btw first time this happens in live event also)
+
+F P
+refresh did not help
+
+A S
+IN Animal abstract class Eat() method is not in italic, so there will default implementation there ?
+
+F P
+on presenter window looks like the presented gets disconnected periodically
+
+V A
+Yes A S
+
+Eric F
+yes only makeSound is abstract, eat has a default impl
+
+V A
+You could see that eat() method is only overridden by Cat
+
+V A
+Dog uses the default implementation
+
+Eric F
+right
+
+A S
+Thanks
+
+Lindsay V
+@F P the meter on your media player is your connection to the platform, it is not the connection the presenter has to the platform.
+
+K D
+Why duck is not an interface here? It has only methods
+
+R K
+with default methods introduced in java8, can we also make Duck as interface?
+
+Elisabeth R
+Because quack() and swim() have implementations in Duck that are inherited (reuse) by the subclasses
+
+Elisabeth R
+@RK yes you could do it that way!
+
+R K
+thanks
+
+R B
+Looks decent
+
+C M
+Seems legit
+
+Elisabeth R
+interfaces + default methods kind of blurs the line between interface compared to inheritance :-)
+
+M P
+red flag!
+
+J K
+Ducks may not all quack() the same.
+
+A Y
+Looks fine
+
+T M
+some ducks might not quack
+
+B S
+could be simplified
+
+V A
+This looks great at least for now
+
+D M
+"display()" is too generic. I could implement a duck that looks like a monster truck, and the interface wouldn't prevent that
+
+A V
+Looks good.
+
+A D
+looks good bcoz it's IS-A relationship
+
+A A
+Behavior should come via Interfaces
+
+Y S
+not all duck quack!!!
+
+I R
+OK for now
+
+A M
+looks good, we can overwrite functions.
+
+C G
+it could lead to a problem like having methods not needed on other subclasses
+
+M E
+Bad. Red flag.
+
+P J
+You are repeating code
+
+K M
+Inheritance, Abstraction, Polymorphism, Encapsu lation, Object, Class is OOPS concept. How to differentiate between OOPS and Design Pattern?
+
+m b
+looks decent
+
+S A
+what about the properties? not methods...
+
+A A
+Are we sure all ducks quack and swim the same?
+
+M E
+You need new class for a new color
+
+A V
+Duplicating code in subclasses
+
+( I
+all ducks cannot quack
+
+A P
+looks good
+
+A R
+for every type of duck we need to recompile the project again
+
+R R
+if we need more behaviour not about duck, we cant implement on others
+
+M M
+Not all ducks quack
+
+Y S
+I am a duck that don't quack
+
+M M
+Not all ducks swim
+
+B S
+could be simplified if the only difference is the display......
+
+H C
+From Test perspective, it's not easy to test mainly Duck
+
+J B
+Can a wooden duck quack?
+
+v G
+code duplication in multiple subclasses
+
+L S
+we may get methods that are not needed
+
+D M
+Parameterize the inherited display() function using members: "headColor", "wingSize", "beakSize", etc
+
+A A
+Behavior should come via Interfaces
+
+M H
+if you had duck as an interface wouldnt it break the is-a relationship, as a "car" could implement a duck behaviour
+
+A V
+Some ducks only fly not all
+
+R N
+Good decoupled design for display but more methods are missing.
+
+A V
+What if few of the ducks look similar
+
+A K
+display can have some common code
+
+g d
+have a Bird type
+
+M P
+not extendable
+
+M A
+Violation of DRY - Don't Repeat Yourself
+
+S T
+What you care about duck type of behaviour?
+
+U 1
+If I am a duck who can not quack, can't I throw exception
+
+M H
+a car is not a duck :)
+
+S T
+of/= or
+
+T M
+favor composition over inheritance
+
+V M
+you did ask lol
+
+Y S
+I am a duck that don't quack. but kid keeps pushing me to quack
+
+Elisabeth R
+It's fantastic! love when people use the chat :-).
+
+R B
+Should fly go into an interface for all animals that fly?
+
+Elisabeth R
+good idea @RB :-) we will discuss shortly!
+
+T M
+they could fly for a bit if they are thrown
+
+Elisabeth R
+:-) @TM
+
+A R
+we should do a new abstract class which will be implemented just by rubber duck
+
+S K
+interface seggregation is required with fly method
+
+Elisabeth R
+SK indeed it is.
+
+J K
+Just override fly.
+
+N S
+proper overri den
+
+Y S
+inherit what you need
+
+C G
+you would need to override every single class that extends from Duck
+
+C G
+i mean override the method fly()
+
+A V
+override whichever possible...
+
+B C
+Use interface for different groups based on nature or properties
+
+H L
+implementing "fly" aspect instead of inheritance?
+
+D A
+Using interface
+
+T M
+think of the things that don't change and implement those in the class. use interfaces for the things that are different
+
+R N
+No, if someone forget to override, suddenly rubber head will fly
+
+A Y
+use multiple interfaces
+
+J J
+Decorator pattern?
+
+K R
+flyable interface
+
+I B
+Duck needs to be converted to an abstract class
+
+J K
+"flyable"
+
+C G
+an interface could be a good start
+
+A G
+multiple inheritence ?
+
+N G
+Interfaces
+
+M A
+Not extensible, because you have to keep modifying the classes
+
+Y E
+Quackable and Flayable interfaces
+
+A K
+Use composition over Inheritance
+
+M M
+Use Flyable and Quackable interface
+
+P K
+Make fly method abstract
+
+S S
+using multiple interfaces and one core abstract class
+
+N S
+can make flu method abstract
+
+Y S
+funtional interfaces
+
+S M
+Flyable interface
+
+I R
+Create some traits for the different behaviours and then compose your ducks with the required traits
+
+A B
+create new interface for flying ducks
+
+A V
+seperate behaviours into seperate interfaces/abstract class
+
+P J
+We can inherit FlyingDuck and NonFlyingDuch from Duck
+
+V A
+Flyable interafce
+
+I K
+We can create Flyable interface with fly method and that interface will be implemented by those duck
+
+R K
+Flyable interface with fly() method
+
+C L
+Separate what changes: different behaviors (flying, quacking)
+
+S C
+class new class flyable
+
+C G
+like Flyable
+
+P J
+Use two abstract classes on the top of the base class of different types
+
+P O
+use composition
+
+B R
+what about `bool canFly()`?
+
+R N
+interface for different behavior
+
+N S
+make fly virtual in base class and override in child class
+
+A G
+2 interfaces, one with Fly and second with non-fly..
+
+P J
+then RubberDuck from NonFlyingDuck
+
+Y K
+interfaces
+
+C M
+Go back in time and don't violate Liskov Substitution Principle lol
+
+R N
+may be add a boolean arguement for fly and not fly
+
+R R
+interface
+
+P J
+I mean two abstract classes
+
+S M
+composition -> fly property
+
+M M
+Implement Flyable interface for ducks which fly and similarly for other properties
+
+A C
+Duck abstract class, extended by FlyingDuck/NonFlyingDuck, extended by individual duck types
+
+A R
+we should add a new abstarct class for non flying ducks
+
+S K
+two more abstract subclasses with flying and non flying.. and then provide concrete implementation for each
+
+I K
+We can create Flyable interface with fly method and that interface will be implemented by those duck
+
+R N
+Or bird abstract as composite class
+
+M N
+wouldn't interface require knowledge that the interface exists.
+
+M R
+Changing beha viors should be extracted and consistent behaviors should be retained in parent class.
+
+A G
+common behavior in single class..
+
+M N
+make fly abstract as well is you want to force the subclass implementator to think
+
+M H
+a fly strategy implementation perhaps
+
+C G
+it not scalable
+
+S B
+inheritance hell
+
+M A
+Not maintainable
+
+R N
+if forgot to override, then the default behavior will hurt us
+
+R B
+You continue deviating from your original design over time, making maintenance harder.
+
+A K
+Making classes hard to extend
+
+N S
+less code reuse
+
+C L
+need to keep writing specific behaviors for the subclasses
+
+R K
+lots of unncessary code in all sub classes
+
+J B
+lose code reuse
+
+J K
+*n problem
+
+Y S
+you get something that you never wanted
+
+S B
+you must implement each method, even if it does not apply.
+
+R Y
+not a clean code
+
+P P
+Code duplicate
+
+V K
+Additional no use code
+
+A Y
+The users of this class will be confused looking at the methods
+
+A V
+code duplication
+
+A G
+high maintaina nce cost
+
+M G
+Too much boilerplate in subclasses
+
+P J
+behaviour which are not required are continued to override
+
+S M
+unnecessary implementation
+
+N S
+child class will have unnecessary functions
+
+M M
+Redundant code
+
+A S
+imposing unneccesary beahviour
+
+B C
+Generalization
+
+M N
+too many exceptions
+
+C B
+Strong coupling
+
+I R
+Code duplication likely, redundant code, maintaining will be difficult
+
+A D
+accidental behavior
+
+M R
+redundant code
+
+m b
+maybe more different behaviours will be coming up
+
+V A
+Too much ambiguity
+
+C G
+if you have 100 different types of ducks you would need to override 100 times
+
+S C
+Repatable code if overriden behaviour is same for multiple subclasses
+
+H Y
+The interface to the rubberduck still contains fly
+
+N G
+Lot of unused code in child classes
+
+S M
+duplication
+
+B S
+Because that violates SOLID - They are being forced to implement what they. don't need
+
+V K
+code maintenance becomes a problem
+
+P O
+changes fail to be isolated
+
+J L
+It hard to keep track of all the different behaviours in the different types of ducks.
+
+N S
+unwanted funtionality
+
+J J
+Code duplication. Some ducks may have the same implementation for a method.
+
+E S
+they might be used by the superclass and lead to unexpected behavior
+
+S K
+we have to then compulsorily provide some implemetation in concrete classes even if it dose not make sense
+
+R Y
+the Clients of this class does not know - runtime exceptions
+
+S M
+maintenance overhead
+
+( I
+wrong abstraction
+
+K S
+quite possible to miss overriding for new classes along with redundency
+
+V A
+we have methods which are of no use
+
+M A
+hard link between the classes
+
+R N
+Sphagetti
+
+R B
+code duplication
+
+I K
+misleading to developer
+
+S M
+sphagetti code
+
+P P
+Not easy to change
+
+R M
+It s too different for inheritance, but too simular to repeat everywhere.
+
+R M
+"similar"
+
+D A
+Boolean property for Fly / No Fly
+
+R N
+Then we end up in tons of interfaces for each property :)
+
+R Y
+If there is alot of behaviour.. then a class needs to implement a lot number of interfaces.. is that ok.
+
+Elisabeth R
+@RN not necessarily a problem (interface segregation) but there's another huge problem
+
+M H
+you loose the the base reference advantage iterating unless if test alot for interface implementation or not
+
+Elisabeth R
+@RY it's okay. But another problem
+
+S C
+code duplicaton
+
+L R
+refactoring would be the big problem
+
+A H
+duplicates
+
+A A
+difficult to maintain code
+
+T M
+you can implement many interfaces
+
+H C
+code reuse ?
+
+S C
+code duplication
+
+R B
+Duplicate code
+
+S M
+we are still duplicating code
+
+M R
+missing reusability
+
+R G
+code duplication
+
+( I
+duplicate implementation
+
+A R
+we have to many interfaces taht a duck can implement
+
+J J
+still have to write the implementations from scratch.
+
+A V
+Type of Object
+
+Y E
+we have to remember to implement for new subtypes
+
+A P
+many interfaces
+
+V M
+we cannot always substitute object with abstract object
+
+R M
+It violates LSP
+
+S K
+there might be too many interfaces
+
+M G
+More things not in common than in common
+
+M C
+do not know that duck can generally quack or fly
+
+S H
+complexity will increase as it scales
+
+P P
+Still same problem exists
+
+r w
+if reference is of type duck, then all methods are not available
+
+R N
+What if bird implements fly and duck implements fly, then it will end up in Sphagetti code.
+
+V M
+liskov principle failed?
+
+M A
+DRY
+
+P P
+Code duplication, hard to change, runtime change
+
+K S
+seems complex and lose maintainability
+
+A B
+Replace interfaces with abstract classes that inheritthe Duck class
+
+R B
+tightly coupled
+
+T M
+sounds like we need a pattern
+
+Elisabeth R
+@TM LOL :-)
+
+V K
+Need to have composition
+
+P C
+xD
+
+A M
+Can't we implement quack() in the base class?
+
+Elisabeth R
+@AM it currently is and classes are overriding it.
+
+A Y
+If we don't override, doesn't it solve the reusability problem?
+
+A M
+Yes, this is what i was wondering...
+
+Elisabeth R
+Yes, but then we have ducks that aren't quacking correctly.
+
+A Y
+If flying behaviour is different, we anyways need to write different code, no resuability
+
+Elisabeth R
+but some ducks do fly the same
+
+C G
+right
+
+A M
+I see, thanks
+
+Elisabeth R
+so the point is we want to reuse where we can but allow for variation.
+
+A Y
+Ahhh, makes sense
+
+C G
+it would be code reuse in those cases
+
+U 1
+multilevel inheritance
+
+S C
+video and voice gone for me.. anyone facing same issue?
+
+Elisabeth R
+try refreshing @SC
+
+R K
+works for me, no issues
+
+M M
+works for me
+
+V A
+We did in a same way with Flyable and Quackable right ?
+
+F P
+no issue here
+
+V A
+Like the design principle provided over here
+
+E F
+.
+
+J S
+thank you
+
+T M
+how is this course different from the LinkedIn learning course?
+
+Y S
+ok
+
+T M
+besides being longer
+
+Elisabeth R
+@TM it's more in-depth and also live so you can ask questions! And many more patterns covered
+
+T M
+thank you Elisabeth
+
+v G
+Is this course covers Gang of Four Book as well?
+
+Elisabeth R
+@vG yes almost everything we cover here is Gang of Four.
+
+Elisabeth R
+Our book is also the same way - patterns are almost all from Gang of Four
+
+R M
+Just realised I have flying ducks on the calendar in the bathroom xD
+
+Elisabeth R
+nice @RM
+
+R N
+I will use design pattern to declutter my kitchen shelfs :)
+
+v G
+That’s nice 🙂 thank you 👍
+
+V M
+material, age
+
+m b
+their behaviour changed
+
+R N
+Almost everything
+
+F P
+animal or toy
+
+N S
+living and nonliving ducks
+
+M N
+anitmate
+
+A A
+quacking
+
+M A
+The flying and quacking behaviors
+
+M M
+Fly and quack behavior
+
+I R
+Flying, quacking behaviour
+
+S S
+fly feature varies
+
+M G
+Varying: appearance (display), sound, flyable/not flyable
+
+R S
+fly and quack behaviour
+
+A A
+quack
+
+M R
+quack() and fly()
+
+M M
+flying jaja
+
+N G
+Flying behaviour
+
+A A
+flly
+
+B C
+Behaviour like fly
+
+V B
+quacking, flying and display
+
+A K
+quaking,flying
+
+M H
+behaviours changes
+
+R B
+Flying and quacking
+
+Y S
+quack fly varies
+
+( I
+quck, fly, swim
+
+A C
+The types of behaviour, and the implementation of each
+
+N G
+Quacking behaviour
+
+R M
+the sound, the movement
+
+Y R
+Flying and quaking
+
+E S
+display varies as well
+
+R N
+Metal duck may have issues in future
+
+M H
+you need to plug-in the implementations somehow
+
+Y S
+Quack and Fly behaviour is different for all ducks
+
+M K
+live duck
+
+F P
+i keep on having connection issues bu only with Elisabeth, never Eric part
+
+Y E
+is it the "composition over inheritance" thing?
+
+S K
+strategy pattern?
+
+R N
+So SuperHero Class can implement fly method too
+
+T M
+code to the interface not to the implementation
+
+Elisabeth R
+@TM that one too!
+
+A G
+Correct me, should we use aggregation in place of composition,
+
+Y S
+has-A over is-A
+
+Elisabeth R
+@AG yes, if the duck goes away the behaviors don't. But we use "composition" to stand in for either aggregation or composition for this course because that subtly doesn't matter too much for the patterns
+
+A G
+ok, thanks
+
+Elisabeth R
+*subtlety
+
+I R
+I bet concrete ducks don't fly!
+
+C M
+IR lol
+
+Elisabeth R
+haha no! good joke
+
+A P
+where is reus ability here?
+
+A M
+So the quack behavior might need to know the private members of a specific duck?
+
+Elisabeth R
+we still get to reuse behaviors! if multiple ducks use Quack we can reuse that same Quack behavior object in multiple ducks
+
+Elisabeth R
+possibly @AM we would have to pass the duck to the behavior so it can make the duck look like it's quacking or flying.
+
+Elisabeth R
+but hopefully the behaviors would use getter / setter methods to access the properties to change the display
+
+A M
+I see, thanks!
+
+R N
+Behavior matters and not the state. As states are common and its behavior varies. As per the first design principle, we seperate the state from behavior. Am i right?
+
+Elisabeth R
+we're separating the behaviors from the Duck state!
+
+Elisabeth R
+although the behaviors can change the state.
+
+R N
+Thanks
+
+R M
+In strategy where do we decide what behavior to apply? In the duck, the abstract class or as a public method in the duck?
+
+Y S
+Quacking and Flying== Strategies
+
+M A
+Strategies can also be referred to as policies, right?
+
+Elisabeth R
+@YS yes. @RM will answer shortly
+
+Elisabeth R
+@MA i haven't heard that but possibly.
+
+M H
+so when will you use interfaces in the "normal" way instead of strategy?
+
+M M
+I will remember it when I have to do a game of ducks
+
+J S
+do the concrete subclasses set their behaviours? rather than exposing the behaviours to the outside world and composing them that way?
+
+V F
+The problem is that for flying you need wings and where should the wings be defined? In behavior or in duck?
+
+T M
+the concrete algos are encapsulated by the strategy. the duck (client) doesn't care which one it it receives as long as it has quack behavior or fly behavior.
+
+V B
+is the delegation an example of double dispatch ?
+
+A B
+did you saw a duck without wings ?
+
+A A
+If we wanted to prevent clients from setting behaviors on ducks that are invalid (Fly() on rubber duck for example)?
+
+A A
+then how would we do it*
+
+A M
+Why not use the setter during the original Mallard constructor as well?
+
+S M
+Can you give an example of usecase of strategy pattern using a real world problem
+
+M H
+If you need to find all the ducks that doesnt fly and you can't check if the duck classes implement ex. a fly interface, would you then expose a new method to check and doesnt that comes back to the original problem?
+
+B C
+It looks like dependency injection?
+
+B S
+Actually, thinking of it, would be better to have the setter methods in Production, so you don't have to bring down an entity just to change behaviour
+
+S M
+Thanks Elisabeth
+
+P T
+modelling transit systems
+
+A H
+Variable behaviors = transform them to proprieties that do those behaviors?
+
+S M
+Will do. thanks Eric.
+
+B S
+Many examples of how useful it would be indeed. Never seen it explained this way. Got to get the book
+
+J S
+haven't we just moved the inheritance issue down a level? what about when behaviours need slight variations on each other? or does it usually increase reuse enough to not be an issue? I know we can't completely avoid reuse
+
+C G
+great book you've just mentioned
+
+Elisabeth R
+@JS we want to reuse where we can and certainly slight variations can be handled in one fly behavior or by implementing two for instance...
+
+Elisabeth R
+depends on the variation complexity I would imagine!
+
+B G
+no
+
+S S
+no
+
+A L
+yse
+
+S M
+Yes
+
+M G
+Yes
+
+C M
+Nope
+
+P T
+yes
+
+J K
+y
+
+R B
+No, never heard of him
+
+Elisabeth R
+and how you keep track of that in the state
+
+V K
+yes
+
+K E
+Yes, read Design patterns... 2 I think?
+
+E S
+great to hear about non-software references to patterns!
+
+A Y
+Interesting
+
+S W
+"Desire Paths"
+
+Elisabeth R
+@SW yes!
+
+Eric F
+Some people call them "cow paths" as well as there is some history of those becoming roads in cities, etc.
+
+V B
+@eric, good to know - "cow paths"
+
+R K
+but that a questionable analogy, because "dont pave the cow path"...
+
+Eric F
+well i think people have suggested that is what happened--but don't claim to know the accuracy of that
+
+J L
+Does the GoF book use a particular programming language? If yes, which one?
+
+Eric F
+or you are saying there is a saying "don't path the cow path?"
+
+Eric F
+C++ and Smalltalk
+
+J L
+Thank you.
+
+Eric F
+it's 25+ years old
+
+R K
+yes)
+
+C M
+Timeless
+
+A Y
+Video keeps pausing, anyone else? :(
+
+R N
+NoAY. Its all good.
+
+C M
+Refresh should fix it
+
+Eric F
+Ah, see how "don't path" is being used. We are I think conflating a real world solution (Alexander) and how that might be a bad idea in software
+
+Eric F
+I'm not trying to draw any connection, but i'm glad you pointed that out
+
+T M
+videos will be available afterwards and they should playback without the fits and starts
+
+S M
+why is it dotted lines with arrow? it has to be solid line . am I right?
+
+S M
+Gotcha.
+
+S M
+thanks Elisa
+
+A M
+Video is going ON and OFF now..
+
+A M
+Others facing this too?
+
+A Y
+@AM yup
+
+C M
+No. Try refresh.
+
+K E
+Nope
+
+B S
+Mine's fine
+
+R N
+Main criteria for this to be Strategy pattern is seperating behaviors and working on it with interfaces. Am iright?
+
+A Y
+It's fine for lots of people, might be geographical issue
+
+C L
+close/relaunch media player to fix video; worked for me.
+
+M H
+according to GoF they would put performFly() method in a seperate interface and still use composition internally?
+
+V S
+Does it makes sense to converge all the subclasses into one implementation of a Duck interface, now that strategies define the behaviors?
+
+A P
+any disadvantages of this pattern ?
+
+H Y
+Is Strategy pattern similarly done in weakly typed languages? Python?
+
+P T
+on any campus a change in schedule would change the paths
+
+A M
+Yes @A Y, refresh fixed it. thanks @C L.
+
+J L
++1 increase in complexity.
+
+M B
+Is the Strategy pattern commonly used? Which patterns are more common?
+
+Elisabeth R
+I think Strategy is very commonly used. Whenever you are delegating behavior to composed objects which happens often!
+
+B G
+any other trade off in strategy pattern ?
+
+Elisabeth R
+can't t hink of any - I personally like it!!
+
+V F
+I wouldn't hire programmer who doesn't know strategy pattern. For all advanced things you'll find common pattern for strategy - var object1 = GetImplementation<ISomeInterface>(context);
+
+D A
+Can we use abstract class instead of interface for defining strategies?
+
+Elisabeth R
+yes!
+
+Elisabeth R
+you can think of abstract class as a kind of interface in the bigger sense of interface
+
+R S
+Great music!
+
+S M
+:-)
+
+S M
+you don't want the music to end
+
+S M
+:-)
+
+D A
+sure. any scenario here when would we prefer one versus the other? My understanding is that if I use interface, I can have a concrete class implement multiple interfaces but with abstract class, I can only extend from one.is that right?
+
+Elisabeth R
+that's correct. if you just have one interface for the behavior like in the duck simulator then you can use either.
+
+D A
+thanks
+
+Elisabeth R
+also you may want to inherit some properties from the behavior super type, so that's another consideration
+
+R B
+earthing
+
+A K
+transforming
+
+V S
+interfacing
+
+S M
+converting
+
+A M
+Converts the interface?
+
+D M
+making one interface to another
+
+A Y
+delegation
+
+N S
+acting as an interface between two entities
+
+C G
+encapsulating
+
+S C
+changing the behaviour
+
+J E
+changing interface
+
+F N
+interfacing
+
+S M
+interface
+
+J S
+interface
+
+M G
+"delegating" or "forwarding" the lines from one to the other
+
+J S
+compatible
+
+B S
+flexibility..
+
+E F
+mapping
+
+R N
+Supporting/Compatiable
+
+S K
+communicating between incompatible objects
+
+I K
+converter
+
+P P
+Mediater
+
+B C
+Creating Proxy
+
+R M
+When you have a few different adaptors, we have the strategy pattern again :) Probably not very common combination in software however.
+
+B S
+Amazing ingenious adapter, lol
+
+Elisabeth R
+@RM yes you could use them together
+
+R N
+lika a translator :)
+
+B S
+Thinking of a proxy server..
+
+M E
+Technical question ... I still the the picture of CHristopher Alexander. Is it correct?
+
+Lindsay V
+No we are on Turkey Adapter slide
+
+Lindsay V
+Please refresh your console.
+
+Eric F
+slide 72
+
+Eric F
+73
+
+A K
+very complex to understand
+
+M E
+Thank you
+
+V B
+IMHO, inherent complexity of the topic.
+
+T M
+pulling one over on the SimUDuck
+
+B C
+Are the Wrapper classes in Java example of Adapter?
+
+J L
+You mean e.g. Integer?
+
+H K
+how can you create an object of type Duck...isn't Duck an interface?
+
+R M
+Won't we run into trouble when we change a strategy on the TurkeyAdaptor?
+
+I K
+I think adapter generally useful in webservices
+
+M H
+can you make an adapter use composition for the duck if the duck is not an interface?
+
+A M
+what would be the output of testDuck(duck)
+
+C G
+so, if you have a chicken you would need to create a chicken adapter as well right?
+
+V K
+It will inherent new duck methods intended not for turkeys, code duplication would be the solution
+
+N G
+can you give some real life use cases of adapter pattern
+
+R N
+Language translator canbe a real life example
+
+R M
+@NG It is common to access a database using an adaptor e.g. PDO in php
+
+P J
+I have a usecase for adapter where a master code like ascheduler to run on different environments.. for them to connect there is a adapterbbeing designed in between so that master code can talk to different environments
+
+A V
+Seems like at a point you can have too many adapters, over use of adapters could be an issue
+
+V A
+Facade looks like Strategy
+
+B S
+Very good example Elisabeth. yes, we add new functionality so we can work with two implementations in parallel.
+
+V F
+If Adapter is complex, wait for Bridge :D But in general you will use Facade, and Adapter quite often with interfaces
+
+M A
+Facades seem to help isolate the client from any code change in a 3rd-party API(s)
+
+R M
+I would say I use adaptors mainly to interact with 3th party services.
+
+B S
+Facade = Like a Proxy..
+
+R N
+Is Adaptor transformation and Facade a simplification?
+
+A S
+Does Facade "orchestrate" the working of subsystems?
+
+N G
+Is API gateway kid facade?
+
+N G
+*kind
+
+P P
+Real world examples of facade
+
+S M
+Facade = is to hide the undelying implementations and provide a common interface
+
+S M
+am I right?
+
+P J
+Facade and adapter seems same
+
+A K
+Facade will convert complex algorithm of calling different interfaces into single call?
+
+Elisabeth R
+@AK very likely yes.
+
+I K
+It will wrapper of all calls like wrapping order and shipping call together
+
+S M
+Thanks Eric
+
+C G
+so a REST API would be an example of a FAcade
+
+N G
+powershell commandlets
+
+P J
+Thanks
+
+R N
+Are all reporting apps which converts data and make it simple to read is facade?
+
+V F
+Difference is when you design them - facade you define over existing interface, adapter - you have 2 interfaces and write adapter so calling one interface will translate to another.
+
+Elisabeth R
+@RN not necessarily no, facade is about simplifying an API not just output.
+
+A B
+You can think of a facade as an
+
+Elisabeth R
+but that could be a situation where you have a facade that creates a simple version of output, sitting on top of a complex logging system
+
+A B
+orchestrator
+
+D M
+I would have thought that Facade is 'hard-coded' to the subsystem unless composition is used...
+
+V K
+REST APIs are adapters ?
+
+Elisabeth R
+Yes I would agree @DM - it's going to be fairly coupled to the subsystem and specific to it.
+
+A V
+tell, don't ask is one I have seen all over our examples so far
+
+Elisabeth R
+Yes I think of REST APIs as a form of adapter!
+
+M H
+If a ui component which expects a single datamodel interface to provide data should use different model classes, you could use an adapter to the different model classes in order for them to expose the interface the ui component expects. Is that correct?
+
+M R
+Any particular reason for picking up a different sequence of design patterns compared to the one we see in the book?
+
+Elisabeth R
+I think so @MH.
+
+M H
+thanks :)
+
+Elisabeth R
+@MR good question - we go through the patterns a little differently in this course than in the book. THere are similarities between patterns... and differences to highlight.
+
+Elisabeth R
+No one approach to them will necessarily be better :-)
+
+V F
+Yes, don't use abstract classes ... use interfaces
+
+g d
+would like more discussion on real-world examples of the patterns
+
+M A
+What is a good way to program to interfaces or depend on abstractions with a language like Ruby that has no actual interface constructs?
+
+P J
+Describe WHY you would use an interface. POJO BO's usually don't need to impl an interface. Rampant interface use is constraining.
+
+Elisabeth R
+Well I don't know Ruby very well, but in general, an "abstraction" is often a super type object so that you can sub in various concrete objects. If the variable refers to the super type, that gives you flexibility in concrete impl.
+
+Elisabeth R
+All these principles are *guidelines* and will not always apply and sometimes you have to break a principle!
+
+M H
+almost SOLID principle
+
+B S
+A class should have on ly one reason to change - The Actor . That's Uncle Bob's favourite.
+
+M A
+For languages like Python with no interface construct like Java, I would think you can use ABCs (abstract base classes) and multiple inheritance or mixins
+
+B S
+definitely mixins MA, I agree.
+
+M A
+Beware the diamond of death
+
+C G
+you should definetly try to avoid multiple inheritance
+
+T M
+give me a quack. I don't care how you do it.
+
+C G
+there is a principle that says that if you thinks you need multiple inheritance, then you probably don't need it
+
+D M
+there seems to be a bit of a balance between 'over-engineering' and refactoring later with using patterns?
+
+Elisabeth R
+YES exactly @DM
+
+Elisabeth R
+the fine art of software development :-)
+
+D M
+:(
+
+R M
+What do you think about 'closed for modification' when a testsuite is in place. Would that change things to 'open for modification'?
+
+R K
+Great content and teaching delivery. I will call it a meta-learning course. Can appreciate the beauty of OOP only by means of Python but see the value of design patterns in the real world problems too. Thanks!!
+
+B S
+Love single resoinsibility.
+
+S M
+layered architecture follows single responsibility principle. Like service layer, entity layer, controller layer - am I right?
+
+A K
+May be we should repeat these principle with design patterns wherever it is applicable.
+
+A P
+Is it practically possible to follow these principles during the time of design (before the impl mentaion)? :)
+
+M A
+Will the course touch on antipatterns?
+
+Y E
+in this case the SimUDuck violated Liskov subs principle right?
+
+E S
+i find usefal also to look at abstractions as APIs
+
+A V
+Do Not Repeat Yourself
+
+A V
+Dry
+
+B S
+Amazing session. Dropping but I've had an amazing time.
+
+Elisabeth R
+great to hear it!
+
+R M
+Thanks, was a great session ;)
+
+E S
+DRY is very mislea ding in a distributed system - beware
+
+Y R
+Thank you!
+
+S S
+absolutely great session!
+
+R D
+Thank you so much, an amazing session!
+
+P G
+Great Session :) Thank you !
+
+D A
+Thank you!
+
+E S
+great session tnx
+
+A B
+Thank you amazing session !!!
+
+C B
+Thanks, great stuff!
+
+A V
+I have already recommended this training to coworkers
+
+T W
+Thanks a lot
+
+P O
+Enjoyed!
+
+H R
+Great session.. Thanks a lot !!
+
+V F
+In real life, I would rather call SRP not on class, but on interface.
+
+B E
+Great presentations. Loved it!
+
+K E
+Thank you, this has been great!
+
+I G
+Great session, thank you!
+
+D M
+good stuff, thanks
+
+M H
+Great session yes, thank you :)
+
+J E
+Thank you
+
+T M
+thanks
+
+B G
+Thank you!
+
+C J
+Thank you. See you next course. Buddha with you.
+
+R B
+Seeing everyone else's responses has been fun!
+
+P K
+Thank you !
+
+C M
+Very well done. I had fun!
+
+V F
+thanks
+
+P C
+thank you :D
+
+B C
+Thank you for the session
+
+D J
+thank you
+
+E A
+thanks!
+
+K R
+Thank you!!
+
+A K
+Thanks you
+
+L S
+Thanks!!!
+
+R B
+Thank you!
+
+A K
+Thank you!
+
+M A
+Thanks, awesome session! Looking forward to the next one
+
+V S
+Thanks
+
+M A
+Thank you so much
+
+A K
+Great session
+
+V K
+Excellent session! The duck example really helped me understand the patterns
+
+R N
+Thank you!
+
+A S
+Thank you!
+
+V T
+Thank you!
+
+H Y
+Great!!thanks
+
+R R
+Thank you!!!
+
+R B
+Thanks
+
+T R
+Thank you!!
+
+A S
+Thanks
+
+S H
+Thanks
+
+F P
+thanks and cu next week
+
+S M
+Thank you Eric and Elisa
+
+Eric F
+Thanks all!
+
+g d
+thanks
+
+S M
+Great Class!
+
+M T
+Thanks. Will there be a recorded video for today?
+
+A L
+thanks
+
+M R
+The best instructors to have for Design Patterns . Thank You!!
+
+S M
+Thank you all!
+
+Eric F
+See you next week!
+
+C G
+Thanks!
+
+S M
+Happy Learning!
+
+N S
+thank you so much
+
+Lindsay V
+👋🏼 Thank you for attending the Week 1 of the live course “Design Patterns in 3 Weeks” presented by Eric Freeman and Elisabeth Robson. We hope you have benefited from Week 1 and look forward to your return on June 9.
+
+N S
+its more helpful
+
+M M
+Thanks
+
+V M
+thank you it was great
+
+M T
+excellent.
+
+V B

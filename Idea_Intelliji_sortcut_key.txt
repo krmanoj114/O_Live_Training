@@ -1,0 +1,55 @@
+
+Idea Intellij sortcut keys
+---------------------------
+
+soutv
+psvm
+soutf
+serr -
+itco - Create iterator 
+itar - iterate array
+shift+Enter - allow to move to below line
+Ctrl+w - to select content
+
+Ctrl+Q - for method defination
+Ctrl+Shift+I - For method defination
+
+Alt+Ctrl+V (OR Alt+Enter) - To assign method retun to veriable
+-
+Alt+Enter - Import static
+
+Ctrl + Space * 2 - static completion
+
+type tos and press Ctrl+Space to generate the toString method
+
+Ctrl+D - make the duploicate line
+
+Alt+Shift+UP OR Down - to move code up or down
+
+Alt+J - to select mote than one line
+
+Ctrl + Alt + T  - to move the selected code to conditional block
+
+Ctrl+Shift+Enter - To wrap the right side code as an argument of calling method.
+Ctrl+Shift+Enter _ to cpmplete the method declaration
+
+Ctrl + E - Recent file
+Ctrl + Shift +E - Recent location
+Ctrl + shift +V - clipboard history
+Ctrl + Shift +W - Expand selection
+
+//Java8
+Alt+Enter
+Collecting: ctl, cts, cj
+Skip .stream().
+:: auto completion Ctrl+Shift+Enter
+
+How to practice refactoring
+-----------------------------
+https://kata-log.rocks/refactoring
+(eg Trivia, Gilded Rose, Yatzi)
+
+https://docs.microsoft.com/en-us/sysinternals/downloads/zoomit
+
+ 
+

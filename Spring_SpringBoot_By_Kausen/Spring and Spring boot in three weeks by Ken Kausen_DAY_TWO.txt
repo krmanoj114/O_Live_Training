@@ -1,0 +1,785 @@
+Spring and Spring boot in three weeks by Ken Kausen
+---------------------------------------------------
+20/5/2021  - DAY TWO
+---------------------
+
+Derek H
+Hello everyone, welcome back to week two of Spring and Spring Boot in 3 Weeks taught by Ken Kousen.
+
+Derek H
+This course is being recorded. It will be ready to view 24-48 hours after class ends, and you will have access to it as long as your O’Reilly Learning account is active.
+
+Derek H
+Once available, you will receive an email with the recording link. You can also view the recordings on the course landing page: https://learning.oreilly.com/attend/spring-and-spring-boot-in-3-weeks/0636920055088/0636920055087/
+
+Derek H
+This is a group chat – please be mindful of any information you decide to share while using it.
+
+Derek H
+We are not responsible for any links to third-party websites or resources, or for your contacts and interactions with third-parties that take place outside of  our website or services.
+
+C J
+Good morning from Silicon Valley
+
+Derek H
+Class has started and you should now be hearing Ken. If you have any audio/connection issues during today’s course, try refreshing your browser.
+
+R S
+Good morning from Chicago
+
+I K
+Morning, Ken, - Hello, World.
+
+M K
+Good morning Ken. Greetings from Belfast, Northern Ireland :)
+
+P G
+Hi from pune,india
+
+U 1
+Hi
+
+K T
+Good morning Ken - from Canada.
+
+r
+Good afternoon from Verona - Italy
+
+C J
+Cleveland Rocks!
+
+M T
+Milroy - London, UK
+
+N W
+Nairobi, Kenya
+
+D K
+Greetings from Athens Greece!
+
+K T
+In Nova Scotia
+
+P O
+Lexington, K entucky
+
+N G
+Melbourne, Australia
+
+M J
+Kerala , India
+
+S H
+India
+
+S P
+West Bengal,India
+
+C J
+Kerala, home of Ayurvedic medicine.
+
+S H
+its right there
+
+M J
+its right there
+
+A S
+Delhi, India
+
+L M
+Good morning from Austin
+
+P G
+great !! you travelled lots :)
+
+R T
+kerela is a state so is west bengal, not cities
+
+M J
+kerala is in the southernmost
+
+A P
+Bangalore, India
+
+T L
+Arlington, TX
+
+J W
+China
+
+S J
+I think the dot comes for cities and kerala is a state
+
+B A
+Kolkata, India
+
+M K
+India, Delhi
+
+B G
+Kath mandu, Nepal
+
+T N
+Howdy from Austin
+
+S J
+Varanasi, India
+
+S S
+Hi from Jaipur, Rajasthan, India
+
+Kenneth K
+https://github.com/kousen/spring-and-spring-boot
+
+Kenneth K
+https://github.com/kousen/spring-and-spring-boot/wiki
+
+Kenneth K
+http://www.kousenit.com/springboot/
+
+A D
+katacoda exercises were good
+
+L H
+@A D, they helped reinforce the concept. Had some problems with lag
+
+L H
+Did you find interface to work well for you?
+
+S C
+I struggled with the katacoda exercises. They do not provide feedback on what you have incorrect.
+
+L H
+@Ken, I read the book beta, it was helpful, so thanks.
+
+C J
+Does the Spring Certification have kata coding tasks like this?
+
+A D
+What's the significance of PostConstruct with respect to the autowired bean injection lifecycle?
+
+P V
+This specific scenario did not proceed past step 2 for me. Neither without that GetMapping annotation nor with attempts like RequestMapping on the class level.
+
+E J
+I had to use @RequestMapping("/books") for it to work
+
+E J
+It doesn't seem to look at where in particular just that it's in the cod
+
+S C
+I gave up. Unless you have an exact match it stalls.
+
+E J
+code*
+
+S J
+I think this is because they ask for mapping at a class level
+
+C J
+Sounds like “kata coding” technology is not ready “for prime time”?
+
+P V
+katakoda in other contexts, like kubernetes scenarios etc is great
+
+P V
+My experience with the java editor was indeed sub par. In some cases it worked great and quickly but in this scenario, it made me question my understanding of the subject.
+
+C J
+Thanks PV.
+
+I K
+What about DAO vs Repository?
+
+I K
+addressed here as well: https://www.baeldung.com/java-dao-vs-repository
+
+I K
+In other words, a repository also deals with data and hides queries similar to DAO. However, it sits at a higher level, closer to the business logic of an app.
+
+I K
+Thanks!
+
+R S
+audio/video breaking up
+
+A S
+refresh - it is ok here
+
+Derek H
+RS, please refresh your browser
+
+Derek H
+Also close out of anything you do not need open for this course
+
+P O
+good here
+
+B S
+Am good with sound
+
+A S
+good here
+
+A S
+I am good
+
+J L
+Good here.
+
+M K
+good here
+
+C J
+Audio fine
+
+S S
+happening
+
+E H
+fine here
+
+S J
+good here
+
+R T
+good here
+
+I K
+it happe ned to me for a few seconds about 2 minutes ago - fine now
+
+I K
+https://learning.oreilly.com/library/view/97-things-every/9781491952689/ch57.html
+
+A S
+Why did we not mention @Autowired at line 14?
+
+A S
+above line 14*
+
+A D
+would you use webclient or httpclient(java 11)?
+
+D K
+Is Mono an async wrapper class?
+
+S P
+is it true that from Spring Boot 3 is not mandatory to put the @Autowire in the constructor and still Spring makes the injection?
+
+S P
+ok, thanks Ken
+
+S P
+I didn't know about the constructors "rule"
+
+A P
+Hi, where would it find the referece to the WebClient.Builder
+
+A P
+and id could not find for WebClient
+
+A S
+screen share ?
+
+D K
+Cant see your screen
+
+J L
+You are not sharing your screen, Ken.
+
+S P
+I can't see your screen Ken
+
+S P
+share your screen
+
+S P
+thank you
+
+A P
+thank you
+
+I K
+You just like us to look at you, Ken
+
+S P
+thanks
+
+R S
+streams looks good
+
+S P
+there should be the WebClient
+
+A S
+How did Spring know which App context to use?
+
+Derek H
+Break time - class will resume shortly.
+
+Kenneth K
+All my changes have been pushed to GitHub
+
+S B
+Hi, Ken. I have heard the term "DTO" a lot? Could you please explain what it is? And how is it different from DAO?
+
+R S
+Ken, have your changes been committed?
+
+Kenneth K
+Sure. I'll mention it when we resume, because it is relevant to database stuff
+
+Derek H
+Break has concluded. Class will now continue.
+
+A D
+also could you talk a little about java 11 httpclient?
+
+Kenneth K
+https://docs.spring.io/spring-framework/docs/current/javadoc-api/
+
+Kenneth K
+https://docs.spring.io/spring-framework/docs/current/reference/html/
+
+I K
+use Ken Kousen once - see what joke we get for you
+
+A M
+hahahahahaha
+
+B S
+lol
+
+R S
+Ha Ha
+
+C J
+Lol. Best joke on NY
+
+A P
+Sorry, where is the joke coming from. I thought we are exposing a url and maintaining a database of jokes. Are we getting from a site
+
+A M
+Yes indeed.
+
+A P
+ok .. Got it .. we are reading the response from the site
+
+A P
+Thank you
+
+A D
+after adding the dependency, did spring pick it up from the classpath?
+
+J L
+Given that you're not really interested in all of those 147 beans - is there a way of opting out of that eager creation?
+
+A D
+thanks. does that imply RestTemplateBuilder is annotated with @Component?
+
+M K
+What's Mono?
+
+A P
+Is there a way to run the application apart from running from IDE and access the endpoints
+
+I K
+think of all the classes in the jdk we're not using
+
+S J
+In the JokeServiceTest class, do we need to autowire the jokeservice in the 2nd test as we are already doing field injection?
+
+I K
+of course, they're not loaded in memory
+
+I K
+@Bean is another component
+
+I K
+so, with Java configuration, you have much more granular control over the beans that get created, right?
+
+R S
+yes - rupee symbol
+
+I K
+what is that in dollars?
+
+I K
+is that a lot of rupees?
+
+I K
+we have a lot of friends from I ndia here
+
+N K
+Shift + F6
+
+R S
+@IK - i believe it is
+
+I K
+168,974.91 United States Dollar
+
+I K
+yes
+
+I K
+:)
+
+I K
+feel free to ignore me :)
+
+M K
+Can we autowire beans inside other beans?
+
+I K
+as a matter of fact, you can ONLY autowire beans inside other beans - Spring does not manage any other classes, which are not beans
+
+M K
+Is this thread-safe by default or do we need to ensure this ourselves?
+
+R S
+sorry, i missed your explanation on @prototype because i lost the audio
+
+R S
+So the assertion would fail?
+
+R S
+thanks
+
+A P
+Awesome.. thank you
+
+R S
+mvn clean install
+
+I K
+mvn package
+
+I K
+install puts it in your local repo
+
+C G
+I don't understand the exact use of AOP? where to use it?
+
+R S
+Ken, please check your git repo on the web, because it does not show any commits this morning
+
+Derek H
+Break time - class will resume shortly.
+
+B S
+Amazing, now that makes a lot of sense AOP drives the proxies
+
+C J
+Just found out https://learning.oreilly.com/attend/java-9-to-17-the-new-feature-benefits/0636920057909/0636920057908/ Henry Tremblay
+
+I K
+good overview of AspectJ: https://www.baeldung.com/aspectj
+
+I K
+sorry - wrong link
+
+Kenneth K
+All changes have been pushed to the GitHub repository
+
+I K
+https://www.baeldung.com/aspectj
+
+C J
+Of course a good prerequisite course to Java Champion Henry Tremblay’s course would be https://learning.oreilly.com/attend/whats-new-in-java/0636920219491/0636920053891 from the inimitable Ken Kousen.
+
+Derek H
+Break has concluded. Class will now continue.
+
+S B
+Are all the spring generated and user-defined beans in the application context thread safe?
+
+R S
+Ken the repo shows changes now. Thanks
+
+A P
+yes.. able to pull the changes ..thanks
+
+Kenneth K
+https://gitter.im/spring-projects/spring-boot
+
+P M
+but with the webClient you can set the Headers and more. Is it possible with the RestTemplate?
+
+P M
+Ok thanks I started late in the course
+
+I K
+pure jdbc brings nostalgic feeling of java being very young
+
+A M
+Agree.
+
+S C
+JDBC - I still do it :-(
+
+A M
+Painfull memories
+
+R S
+Agr
+
+R S
+Agree with @AM
+
+A P
+How about queries taking more than 1 parameter like "select first, second from student where id =? and age < ?
+
+I K
+rowNum is not used in the example, but it could be useful
+
+P V
+Would rowNum be used to figure out how many rows an update sql statement actually updated?
+
+I K
+maybe if i wanted to process only odd rows, for example
+
+P V
+nvm, just noticed we are only talking about SELECTs
+
+I K
+>>@PV Would rowNum be used to figure out how many rows an update sql statement actually updated? -I don't think so, it is always the number of the row currently processes
+
+I K
+processed
+
+M K
+Is this by default set to auto-commit?
+
+M K
+thanks
+
+S P
+is it possible to make blocking queries? I mean that while some thread/instance reads a table the others have to wait in order to get the result they are looking for?
+
+I K
+jdbc.properties can be anywhere on the classpath?
+
+I K
+and all properties are in application.properties
+
+A D
+is application.yml used more now?
+
+I K
+great trick! thanks, Ken
+
+A D
+thanks :)
+
+P M
+is it possible to encrypt the DB-Password. The way they show it in the documentation is not secured!!!
+
+M K
+Is there a way to obfuscate sensitive information like password?
+
+P V
+is it possible to segregate the Properties files based on the environment and woould spring be able topick the properties files based on the environment
+
+N K
+How to configure multiple Data sources? Let's say one each of types MySQL and PostgreSQL or simply 2 different MySQL
+
+R S
+Ken can you please post the link to the spring reference here?
+
+Kenneth K
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
+
+R S
+thanks!
+
+M K
+Love the progress bar :)
+
+I K
+3. HSQLDB (HyperSQL Database) HSQLDB is an open source project, also written in Java, representing a relational database. It follows the SQL and JDBC standards and supports SQL features such as stored procedures and triggers.
+
+I K
+It can be used in the in-memory mode, or it can be configured to use disk storage.
+
+P M
+your entities are not in the entities package
+
+I K
+if you get a moment, could you share you app design process for a new app? I mean, after you set up a Spring Boot starter app, do you follow a particular design order - controllers, repos, etc?
+
+K E
+why we create 3 constructors?
+
+I K
+thank you - i did not mean 'right now', but before the end of the course. Thanks, Ken!
+
+K E
+ty!
+
+I K
+PRIVATE BENJAMIN. s
+
+I K
+Private Benjamin is an officer by now. You mentioned her once before
+
+Derek H
+Break time - class will resume shortly.
+
+Kenneth K
+Is she, though? I suspect she left the service after her enlistment was up
+
+A D
+are schema.sql and data.sql are looked up by spring using the file names?
+
+A D
+in other words, if we name them schema1.sql and data1.sql, will they be picked up?
+
+Kenneth K
+Those names (schema.sql and data.sql) are specific, though you can set the names you're actually using in application.properties
+
+A D
+got it, thanks
+
+A D
+it seems that we need to know some conventions established by spring to make life easier :)
+
+Kenneth K
+Right, but that's why you're here :)
+
+A D
+yeah :)
+
+Derek H
+Break has concluded. Class will now continue.
+
+P M
+can I put the sqls in a different Folder e.g. /dbscripts for example?
+
+A D
+what happens if we've two or more db drivers in the classpath?
+
+A D
+sure, thanks
+
+I K
+however, there is such an option as XA transactions, i believe
+
+I K
+good to know, thanks!
+
+P M
+Ken could you fix your Mic? The sound is not so clear as before. Many Thanks
+
+P M
+I did the refresh
+
+J L
+Sound is a bit worse indeed.
+
+P M
+Many thanks!
+
+G L
+refresh needed
+
+P M
+perfekt!
+
+J L
+Better now. Thanks.
+
+M L
+Way better, thanks
+
+A M
+Better.
+
+G L
+good
+
+P O
+better
+
+B A
+Yes..better
+
+N W
+Much better audio
+
+J U
+But in this case you have two shots against the database.
+
+B S
+Ken, The Exception sounds more like it will fail if it finds more than one row?
+
+T S
+Why not query for a List<Office> instead? When it is null or empty, return nothing. But it saves one query
+
+T S
+you'd still fitler by id though
+
+P M
+how about Option.orElse?
+
+P M
+Optional.orElse()
+
+P M
+the null?
+
+P M
+then null
+
+P M
+then return null
+
+A P
+Can i use JdbcTemplate.update(insertSQL )
+
+A P
+instead of simpleJdbcInsert
+
+A P
+How are the 2 different
+
+A M
+Sorry for the silly question but English is not my mother tongue. What's the correct pronunciation, "S Q L" or "SEQUEL"?
+
+P M
+wich values will be the Enum have in the DB?
+
+A M
+hahahahahaha
+
+A M
+Ok, thanks.
+
+I K
+The standard says that 'Ess-cue-ell' is the appropriate way of speaking SQL. However, many English-speaking database professionals still use the nonstandard pronunciation "sequel."
+
+P M
+many thanks!
+
+A M
+Thanks I K
+
+I K
+@AM of course
+
+P M
+@Transaction may be to rescue?
+
+I K
+What about @DirtiesContext ?
+
+I K
+oh, right!
+
+N W
+The officer's name is familiar 😉
+
+P M
+whats the difference with Strategy Auto
+

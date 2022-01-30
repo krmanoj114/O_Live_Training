@@ -1,0 +1,9 @@
+
+Advanced Functional Programming with Java
+---------------------------------------
+Code path - https://github.com/victorrentea/java8-workshop
+ https://learning.oreilly.com/accounts/login-check/?next=/live-training/courses/-/0636920058559/
+ 
+ https://www.youtube.com/watch?v=ZiOMQRujfMM&feature=youtu.be
+
+https://victorrentea.ro/

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="springBoot-ws">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/restClient.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

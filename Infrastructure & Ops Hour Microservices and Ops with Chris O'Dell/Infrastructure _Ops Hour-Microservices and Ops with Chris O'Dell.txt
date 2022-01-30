@@ -1,0 +1,119 @@
+
+Infrastructure & Ops Hour: Microservices and Ops with Chris O'Dell
+==============================================================
+
+The recording of today’s event will be available within 48 hours, here: https://learning.oreilly.com/live-training/courses/infrastructure-ops-hour-microservices-and-ops-with-chris-odell/0636920054071/
+
+Shannon C
+Note: This is a group chat–please be mindful of any information you decide to share while using it. We’re not responsible for any links to third-party websites or resources, or for your interactions with third-parties that take place outside of our service
+
+Shannon C
+Note: The Group Chat will be part of the recording so please do not post personal information (such as email addresses) or anything confidential.
+
+Shannon C
+Hello everyone and welcome! The event has begun and you should be able to hear and see Sam now in the media player.
+
+Shannon C
+If you experience any issues with audio or video, please try refreshing your browser. Chrome is the recommended browser. We also recommend that you disconnect from any VPN.
+
+S G
+Session started?
+
+Shannon C
+Yes! The event has begun and you should be able to hear and see Sam now in the media player.
+
+M G
+Just wanted to check What is the website of Monjo that Chris is working?
+
+Shannon C
+If you don't hear and see the talk, please try refreshing your browser.
+
+M G
+Got the website link thanks
+
+Shannon C
+https://monzo.com/
+
+Shannon C
+Great, you beat me! :)
+
+M J
+The last link in the resource list isn't working for me. The one for online training course with Mark Richards
+
+L V
+The Session is started?
+
+Shannon C
+Hi LV: Yes. Please refresh your browser.
+
+L V
+already tried
+
+Shannon C
+Let me know if that doesn't load the discussion for you.
+
+Shannon C
+Ok, what browser are you in?
+
+L V
+chrome
+
+Shannon C
+Please try switching to Firefox if you can.
+
+Shannon C
+Or, try a Chrome Incognito tab and join from there.
+
+Shannon C
+@MJ: I'm looking into that
+
+M J
+All other links work only the last one isn't working.
+
+Shannon C
+Ok, please use this link if you're interested in registering for the Microservices and Architecture Design course with Mark Richards, on July 7:
+
+S C
+https://learning.oreilly.com/attend/microservices-architecture-and-design/0636920071099/0636920054783/
+
+M J
+Thank you
+
+Shannon C
+Sure!
+
+T K
+are there slides?
+
+Shannon C
+Hi TK
+
+Shannon C
+No, not for today's event.
+
+Shannon C
+It's discussion-only. We encourage you to submit your questions in the Q&A widget, open on the right side of the screen. Thanks!
+
+L V
+Already tried with firefox and did not worked
+
+Shannon C
+Hi LV: Ok, I'm sorry to hear that. Are you on VPN by chance? Sometimes that can interrupt the connection to ON24.
+
+Shannon C
+If refreshing, changing browsers, or using Chrome Incognito doesn't fix things, I recommend connecting from your phone or a tablet, if possible. Or, rebooting your machine and then joining. (A connection from your phone may be quicker)
+
+Shannon C
+Here's the direct link to join: https://learning.oreilly.com/live-training/courses/infrastructure-ops-hour-microservices-and-ops-with-chris-odell/0636920054071/
+
+M G
+For ~2000 Microservices How many containers are required? Same with the cloud infracture?
+
+M G
+*Infrastructure
+
+Sam N
+https://www.lastweekinaws.com/t/ - AWS cost optimization
+
+Sam N
+Microservices using their own DB: https://learning.oreilly.com/library/view/building-microservices-2nd/9781492034018/ch01.html#idm45035661840056

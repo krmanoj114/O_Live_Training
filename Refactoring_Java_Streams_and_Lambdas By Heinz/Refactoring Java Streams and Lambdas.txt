@@ -1,0 +1,340 @@
+Refactoring Java Streams and Lambdas
+------------------------------------
+URL: https://www.javaspecialists.eu/git/safari/refactorj8-3753.git Username: safari3753 Password: iadCyq+w
+
+
+Shannon C
+Hello everyone and welcome to Day 1: Refactoring to Java Streams and Lambdas, with Heinz Kabutz.
+
+Shannon C
+We'll begin in 10 minutes. We hope you enjoy the course!
+
+Heinz K
+URL: https://www.javaspecialists.eu/git/safari/refactorj8-3753.git Username: safari3753 Password: iadCyq+w
+
+C J
+Good morning from Silicon Valley
+
+Shannon C
+Hello everyone and welcome! The class has begun and you should be able to hear and see Heinz now in the media player.
+
+K L
+Good morning and evening from Kuala Lumpur
+
+C J
+I don’t see slides in the repo I just cloned
+
+Shannon C
+If you experience any issues with audio or video, please try refreshing your browser. Chrome is the recommended browser. We also recommend that you disconnect from any VPN.
+
+D V
+Hello from Mumbai
+
+C J
+No it’s me. Been to all your classes several times. LOL
+
+Shannon C
+Note: This is a group chat–please be mindful of any information you decide to share while using it. We’re not responsible for any links to third-party websites or resources, or for your interactions with third-parties that take place outside of our service
+
+Shannon C
+Note: The Group Chat will be part of the recording so please do not post personal information (such as email addresses) or anything confidential.
+
+J h
+Hello from France
+
+Shannon C
+The recording of class will be available within 48 hours, here: https://learning.oreilly.com/attend/refactoring-to-java-streams-and-lambdas/0636920507567/0636920057189/
+
+R V
+Hellow from Bentonville
+
+H .
+Search RefactoringToStreams-2.0.pdf on the root folder itself
+
+H .
+Can't agree more, for the recording. I was wondering if these files could be played on another player, or the player supported better seek options.
+
+Shannon C
+Unfortunately no, the recordings are only available on the O'Reilly platform, which is currently using ON24 for the capture of live events. Thank you
+
+Heinz K
+GIT repository: URL: https://www.javaspecialists.eu/git/safari/refactorj8-3753.git Username: safari3753 Password: iadCyq+w
+
+H .
+Whats the difference between Migrate 1 and 2?
+
+K S
+how to add inspection profile in analyzer?
+
+K S
+got it
+
+M G
+Are these options avaialable on community edition ?
+
+C J
+One instructor says dont waste time with JPMS modules unless you are writing a library to be used by others. Is this a good idea?
+
+C J
+It was Ken
+
+C J
+kousen
+
+E N
+Java 9 also introduced JShell
+
+C J
+Nice answer. Thanks.
+
+C J
+if it goes on Maven Central use JPMS.
+
+C J
+Did the Java bytecode change with each version of Java? Or are all these new features just abstractions on the original byte code spec?
+
+A S
+What is the purpose of the limitation on running compile code on the preview version non compatible ascendant withe earlier versions ?
+
+I K
+invokedynamic?
+
+J S
+Invoke Dynamic
+
+A S
+OK, Thanks.
+
+C J
+You use Release Candidate of IntelliJ for a live class. Other teachers I have never seen do that. The JetBrains RCs are very stable I guess?
+
+M G
+I'm not able access github link posted above
+
+M G
+is there a way to, may be mail the code zip
+
+K K
+For some reason my InteliJ cannot find the link to AuthHelper#loadAuthenticators_internal. Where should I search for the file in the directory structure?
+
+D V
+may be due to VPN issue cannot connect
+
+K K
+YEs, shift-shift worked, thanks!
+
+M G
+It worked, Thank you
+
+A S
+Afer a single refectory done, how to make sure that nothing have been broken ?
+
+E N
+Should we run any unit tests to verify our refactoring code changes do not actually break anything in the project ?
+
+A Y
+Can't search for RefactoringTasks class
+
+S W
+can you please remove the black screen
+
+C J
+Wow, just found your first article https://www.javaspecialists.eu/archive was Nov. 2000 AD!
+
+C J
+Did you say https://www.oracle.com/erp/what-is-erp/ ?
+
+M G
+which one is preferred, Lambda or method references ?
+
+Heinz K
+https://ofbiz.apache.org/
+
+I K
+There are rare cases where method references don't work and you need to provide a lambda
+
+I K
+But I don't have an example on top of my head
+
+E N
+Speaking of interfaces, Java 15 introduced local interfaces. What can they be used for ? What are good use cases for them ?
+
+M G
+I'm not so good at method references, if you have a training wheels for that
+
+C S
+Yes, I can't even get the first exercise. I think I need another example.
+
+S W
+can you explain {@link EntityDataLoadContainer#init(List, String, String)} // Why doesn't command:: work
+
+C J
+Please move timer off screen.
+
+I K
+https://stackoverflow.com/questions/37413106/java-lang-nullpointerexception-is-thrown-using-a-method-reference-but-not-a-lamb
+
+M G
+which one is more readable method reference or lambda ?
+
+C S
+Thanks - that makes more sense. I had forgotten the cast.
+
+A C
+Do I have to config IntelliJ to get "refactoring to lambda/method reference" to show up on Alt/Enter?
+
+A Y
+Is there a string difference between ClassName::method and instanceReference::method. Should we not use the latter for runtime polymorphism to kick in?
+
+A Y
+strong difference*
+
+C J
+Can you please make your project files window small and your code window bigger to minimize left and write code scrolling?
+
+M G
+I know it's silly question, mistakes in method reference will cause compilation errors right not runtime exceptions
+
+C J
+Thank you, much better
+
+E N
+Can we use method references in cases when a lambda expression takes two or more input parameters ?
+
+I K
+There are bound and unbound instance method references. Ca n you tell the difference and maybe provide an example of the unbound ones?
+
+C J
+On24 is the WORST for so many things!
+
+A C
+where can I find all these "Java * Migrate" Profiles to import into Intellij.
+
+M G
+when should we use forEach and when should we use stream ?
+
+A Y
+Apart from the readability, is there any performance reason that we decided to use lambdas and streams? I mean we were working fine with for- loops and and anonymous inner classes
+
+M G
+in fact i've heard there's a performance drop with lambdas
+
+E N
+Speaking of streams, I heard it is not recommended to create local variables of Stream type. Is it true or not ?
+
+C J
+As a Java beginner I find lambdas and streams much easier to read and understand
+
+J A
+Lucky U, CJ :)
+
+J A
+totally agree with you Heinz, we old people like to know details of each and everything
+
+A Y
+We should not change local variables(outside lambda) inside the lambda function , is that right?
+
+M G
+bug report intellij
+
+I K
+Unless you pass the boxed Integer type
+
+A Y
+So does removeIf marks the elements to be removed and then shift all the elements later on, right?
+
+C J
+Video stopped?
+
+K L
+Stopped.
+
+C J
+Refreshed.
+
+A Y
+Video does not work
+
+A 4
+We cant hear you
+
+B C
+No sound
+
+Shannon C
+stand by everyone
+
+K K
+Yes, not we can hear!
+
+B C
+Yes we can here you
+
+A 4
+refresh , video is awful
+
+C J
+Text is SO blurry. After several refresh.
+
+S W
++1
+
+A Y
+Sorry, but do we have another alternative to On24, something like zoom. It takes a lot of patience on on24 :)
+
+S W
+lol - now you are repeating in a loop
+
+C J
+On24 is ALWAYS the WORST of several providers. No wonder they are hiring engineers in Silicon Valley.
+
+C J
+Total blurry video.
+
+C J
+Only audio and with frozen video.
+
+C J
+audio is crystal clear.
+
+Shannon C
+Please give us a little bit of time--working on it. We'll get there. Thanks!
+
+Shannon C
+We'll resume shortly. Heinz is switching connections.
+
+K L
+i can see it clear now
+
+S W
+looks good to me
+
+C J
+Seems fine now.
+
+Shannon C
+Thank you for your patience everyone
+
+K K
+Now I can see your IntellJ better than mine :)
+
+C J
+Looks fine now.
+
+C J
+All OReilly on24 instructors should switch to the lower screen resolution on the Mac. This is the first time in 100+ On24 streams that the font is instantly clear. Normally it is blurry for 5 seconds.
+
+C J
+You are the only instructor I have seen switch off of higher res 1080p down to a much lower macOS screen res and now all of the blurry buffering of text code sharing has gone away completely. I have a 200mbps Comcast ISP and the text is always blurry @ 1st
+
+C J
+BTW, slides are ALWAYS perfectly clear. No buffering or blurry.
+
+C J
+Of course, the on24 recording is perfectly clear. No blurriness ever. Only while streaming.
+
+E N
+Is there any significant difference between unmodifiable maps returned from Map.of() methods and unmodifiable views of specified maps returned from Collections.unmodifiableMap() method ?
+
+
+

@@ -1,0 +1,23 @@
+Issuer URL
+---------
+https://dev-59115263.okta.com/oauth2/default
+
+authorization_endpoint: "https://dev-59115263.okta.com/oauth2/default/v1/authorize"
+token_endpoint: "https://dev-59115263.okta.com/oauth2/default/v1/token"
+
+
+client id - 0oa1n0wkhaJmndRKR5d7
+Client Secret - pYnDckJCmpINVwT75mVEXyFPz-zADCE59UL12p3Y
+
+okta domain - dev-59115263.okta.com
+
+
+
+https://dev-59115263.okta.com/oauth2/default/v1/authorize?
+response_type=code&
+scope=mango&
+client_id=0oa1n0wkhaJmndRKR5d7&
+state=pYnDckJCmpINVwT75mVEXyFPz-zADCE59UL12p3Y&
+redirect_uri=https://example-app.com/redirect&
+code_challenge=WwxOb6_BfDhGnZTURb_wvjPDjFz2LQDGh1px3TT1CPg&
+code_challenge_method=S256
